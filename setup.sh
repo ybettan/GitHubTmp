@@ -35,8 +35,8 @@ tests/deploy.sh
 listening_port=32502
 host_ip=`hostname -I | cut -d" " -f1`
 minikube_ip=`minikube ip`
-thanos_querier_port=`./kubectl get svc thanos-querier -n observatorium | tail -1 | cut -d":" -f2 | cut -d"/" -f1`
-thanos_receive_port=`./kubectl get svc thanos-receive -n observatorium | tail -1 | cut -d":" -f2 | cut -d"/" -f1`
+thanos_querier_port=`./kubectl get svc thanos-querier -n observatorium | tail -1 | cut -d":" -f3 | cut -d"/" -f1`
+thanos_receive_port=`./kubectl get svc thanos-receive -n observatorium | tail -1 | cut -d":" -f4 | cut -d"/" -f1`
 
 sudo --preserve-env=minikube_ip --preserve-env=host_ip --preserve-env=thanos_querier_port iptables -t nat -I PREROUTING \
     -p tcp -d $host_ip --dport $thanos_querier_port -j DNAT --to-destination $minikube_ip:$thanos_querier_port
@@ -51,5 +51,6 @@ sudo --preserve-env=thanos_receive_port iptables -I FORWARD -p tcp -m tcp --dpor
 sudo --preserve-env=listening_port iptables -I FORWARD -p tcp -m tcp --sport $listening_port -j ACCEPT
 sudo --preserve-env=listening_port iptables -I FORWARD -p tcp -m tcp --dport $listening_port -j ACCEPT
 
+# FIXME: not thanos-querier port ?!
 # test connection from my mac with curl and GUI at "bkr-hv01.dsal.lab.eng.bos.redhat.com:32502" (host is 10.19.41.1)
 
