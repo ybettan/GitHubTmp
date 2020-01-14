@@ -51,6 +51,5 @@ sudo --preserve-env=thanos_receive_port iptables -I FORWARD -p tcp -m tcp --dpor
 sudo --preserve-env=listening_port iptables -I FORWARD -p tcp -m tcp --sport $listening_port -j ACCEPT
 sudo --preserve-env=listening_port iptables -I FORWARD -p tcp -m tcp --dport $listening_port -j ACCEPT
 
-# FIXME: not thanos-querier port ?!
-# test connection from my mac with curl and GUI at "bkr-hv01.dsal.lab.eng.bos.redhat.com:32502" (host is 10.19.41.1)
+# test connection from my mac with curl and GUI at "bkr-hv01.dsal.lab.eng.bos.redhat.com:<thanos-querier port>" (host is 10.19.41.1)
 

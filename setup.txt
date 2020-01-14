@@ -34,5 +34,5 @@ iptables -I FORWARD -p tcp -m tcp --sport 32502 -j ACCEPT
 iptables -I FORWARD -p tcp -m tcp --dport 32502 -j ACCEPT
 
 # test connection from my mac with curl and GUI
-curl bkr-hv01.dsal.lab.eng.bos.redhat.com:32502 (host is 10.19.41.1) (not querier port?)
+curl bkr-hv01.dsal.lab.eng.bos.redhat.com:<thanos-querier port> (host is 10.19.41.1)
 
