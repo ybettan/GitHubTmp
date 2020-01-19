@@ -1,7 +1,7 @@
 
 # clone observatorium/configuration repo and the last PR
 git clone https://github.com/observatorium/configuration.git
-cd configuration
+cd ~/observatorium/configuration
 git fetch origin pull/72/head:pr-72
 git checkout pr-72
 
