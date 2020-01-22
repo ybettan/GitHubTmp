@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: example-app
+  namespace: prometheus
 spec:
   replicas: 3
   selector:

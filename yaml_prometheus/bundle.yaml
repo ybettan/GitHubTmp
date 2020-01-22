@@ -6,14 +6,16 @@ metadata:
     app.kubernetes.io/name: prometheus-operator
     app.kubernetes.io/version: v0.34.0
   name: prometheus-operator
+  namespace: prometheus
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
   name: prometheus-operator
+  namespace: prometheus
 subjects:
 - kind: ServiceAccount
   name: prometheus-operator
-  namespace: default
+  namespace: prometheus
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
@@ -23,6 +25,7 @@ metadata:
     app.kubernetes.io/name: prometheus-operator
     app.kubernetes.io/version: v0.34.0
   name: prometheus-operator
+  namespace: prometheus
 rules:
 - apiGroups:
   - apiextensions.k8s.io
@@ -97,7 +100,7 @@ metadata:
     app.kubernetes.io/name: prometheus-operator
     app.kubernetes.io/version: v0.34.0
   name: prometheus-operator
-  namespace: default
+  namespace: prometheus
 spec:
   replicas: 1
   selector:
@@ -135,7 +138,7 @@ spec:
         beta.kubernetes.io/os: linux
       securityContext:
         runAsNonRoot: true
-        runAsUser: 65534
+        runAsUser: 1000620001
       serviceAccountName: prometheus-operator
 ---
 apiVersion: v1
@@ -146,7 +149,7 @@ metadata:
     app.kubernetes.io/name: prometheus-operator
     app.kubernetes.io/version: v0.34.0
   name: prometheus-operator
-  namespace: default
+  namespace: prometheus
 ---
 apiVersion: v1
 kind: Service
@@ -156,7 +159,7 @@ metadata:
     app.kubernetes.io/name: prometheus-operator
     app.kubernetes.io/version: v0.34.0
   name: prometheus-operator
-  namespace: default
+  namespace: prometheus
 spec:
   clusterIP: None
   ports:
