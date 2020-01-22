@@ -1,0 +1,22 @@
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: prometheus
+spec:
+  serviceAccountName: prometheus
+  remoteWrite:
+      - url: "telemeter-server-telemeter-benchmark.apps.ocp-edge-cluster.qe.lab.redhat.com"
+      #- url: "http://10.19.41.1:32502/api/v1/receive"
+        writeRelabelConfigs:
+        - sourceLabels: [__name__]
+          replacement: Freddy_Rolland
+          targetLabel: cluster
+        tlsConfig:
+          insecureSkipVerify: true
+  serviceMonitorSelector:
+    matchLabels:
+      team: frontend
+  resources:
+    requests:
+      memory: 400Mi
+  enableAdminAPI: false
