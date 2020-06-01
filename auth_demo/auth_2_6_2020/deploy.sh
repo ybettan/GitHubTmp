@@ -1,11 +1,11 @@
 #!/bin/bash
 
+
 oc -n openshift-monitoring create secret generic prometheus-k8s-remote-write \
     --from-file ~/certs/client.key \
     --from-file ~/certs/client.pem \
     --from-file ~/certs/ca.pem
 
-#oc apply -f environments/dev/manifests/
 oc expose svc/observatorium-xyz-observatorium-api -n observatorium
 
 observatoriu_svc_ip=`oc get svc/observatorium-xyz-observatorium-api -n observatorium \
@@ -42,3 +42,7 @@ data:
 
 oc scale --replicas=1 statefulset --all -n openshift-monitoring; \
     oc scale --replicas=1 deployment --all -n openshift-monitoring
+
+OVERRIDE='[{"group": "extensions/v1beta1", "kind": "Deployment", "name": "cluster-monitoring-operator", "namespace": "openshift-monitoring", "unmanaged": true}]'
+oc patch clusterversion/version --type=json -p="[{\"op\": \"add\", \"path\": \"/spec/overrides\", \"value\": $OVERRIDE }]"
+oc -n openshift-monitoring scale --replicas=0 deployment/cluster-monitoring-operator
