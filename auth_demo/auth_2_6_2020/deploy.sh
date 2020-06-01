@@ -1,14 +1,14 @@
 #!/bin/bash
 
-oc -n openshift-monitoring create secret generic remote-write-key-cert-ca \
+oc -n openshift-monitoring create secret generic prometheus-k8s-remote-write \
     --from-file ~/certs/client.key \
     --from-file ~/certs/client.pem \
     --from-file ~/certs/ca.pem
 
 #oc apply -f environments/dev/manifests/
-oc expose svc/observatorium-xyz-observatorium-api-gateway -n observatorium
+oc expose svc/observatorium-xyz-observatorium-api -n observatorium
 
-observatoriu_svc_ip=`oc get svc/observatorium-xyz-observatorium-api-gateway -n observatorium \
+observatoriu_svc_ip=`oc get svc/observatorium-xyz-observatorium-api -n observatorium \
     | tr -s " " | tail -1 | cut -d" " -f3`
 
 echo "
@@ -28,15 +28,15 @@ data:
             targetLabel: cluster
           tlsConfig:
             keySecret:
-              name: remote-write-key-cert-ca
+              name: prometheus-k8s-remote-write
               key: client.key
             cert:
               secret:
-                name: remote-write-key-cert-ca
+                name: prometheus-k8s-remote-write
                 key: client.crt
             ca:
               secret:
-                name: remote-write-key-cert-ca
+                name: prometheus-k8s-remote-write
                 key: ca.crt
 " | oc apply -f -
 
