@@ -6,11 +6,6 @@ oc -n openshift-monitoring create secret generic prometheus-k8s-remote-write \
     --from-file ~/certs/client.pem \
     --from-file ~/certs/ca.pem
 
-oc expose svc/observatorium-xyz-observatorium-api -n observatorium
-
-observatoriu_svc_ip=`oc get svc/observatorium-xyz-observatorium-api -n observatorium \
-    | tr -s " " | tail -1 | cut -d" " -f3`
-
 echo "
 apiVersion: v1
 kind: ConfigMap
@@ -21,7 +16,7 @@ data:
   config.yaml: |
     prometheusK8s:
       remoteWrite:
-        - url: "https://$observatoriu_svc_ip:8080/api/metrics/v1/write"
+        - url: "https://observatorium-xyz-observatorium-api.observatorium.svc.cluster.local:8080/api/metrics/v1/api/v1/receive"
           writeRelabelConfigs:
           - sourceLabels: [__name__]
             replacement: seal18_OS_cluster # this is the name of the cluster
@@ -33,16 +28,21 @@ data:
             cert:
               secret:
                 name: prometheus-k8s-remote-write
-                key: client.crt
+                key: client.pem
             ca:
               secret:
                 name: prometheus-k8s-remote-write
-                key: ca.crt
+                key: ca.pem
 " | oc apply -f -
 
 oc scale --replicas=1 statefulset --all -n openshift-monitoring; \
     oc scale --replicas=1 deployment --all -n openshift-monitoring
 
+# wait until prometheus pods goes up
+sleep 3m
+
 OVERRIDE='[{"group": "extensions/v1beta1", "kind": "Deployment", "name": "cluster-monitoring-operator", "namespace": "openshift-monitoring", "unmanaged": true}]'
 oc patch clusterversion/version --type=json -p="[{\"op\": \"add\", \"path\": \"/spec/overrides\", \"value\": $OVERRIDE }]"
 oc -n openshift-monitoring scale --replicas=0 deployment/cluster-monitoring-operator
+
+#FIXME: add the image replacment in prometheus-operator's deployment
