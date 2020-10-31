@@ -87,54 +87,54 @@ func WriteYaml(fromObj interface{}, toFile string) error {
 //	}
 //}
 
-//func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct interface{}) error {
-//
-//	err := ReadYaml("in.yaml", yamlStruct)
-//	if err != nil {
-//		fmt.Printf("cannot read yaml: %s\n", err)
-//	}
-//
-//	//fieldNames := strings.Split(fieldName, ".")
-//
-//	//data := reflect.ValueOf(yamlStruct)
-//	//for _, f := range fieldNames {
-//	//	fmt.Println(data)
-//	//	newF, isList, index := parseField(f)
-//	//	if isList {
-//	//		data = data.FieldByName(newF).Index(index)
-//	//	} else {
-//	//		data = data.FieldByName(newF)
-//	//	}
-//	//}
-//	//fmt.Println(data.String())
-//	//data.Set(reflect.ValueOf([]string{"test"}))
-//	//fmt.Printf("type: %T\nvalue: %v\n", data, data)
-//
-//	//switch op {
-//	//case "append-list":
-//	//default:
-//	//	err := errors.Errorf("operation %s isn't supported\n", op)
-//	//	return err
-//	//}
-//
-//	//err = WriteYaml(&yamlStruct, "out.yaml")
-//	//if err != nil {
-//	//	fmt.Printf("cannot write yaml: %s\n", err)
-//	//}
-//
-//	return nil
-//}
+func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct interface{}) error {
+
+	ReadYaml("in.yaml", yamlStruct)
+	yamlStruct.(*MachineConfig).Spec.Config.Passwd.Users[0].SshAuthorizedKeys[0] = "new ssh key"
+	WriteYaml(yamlStruct, "out.yaml")
+
+	//err := ReadYaml("in.yaml", yamlStruct)
+	//if err != nil {
+	//	fmt.Printf("cannot read yaml: %s\n", err)
+	//}
+
+	//fieldNames := strings.Split(fieldName, ".")
+
+	//data := reflect.ValueOf(yamlStruct)
+	//for _, f := range fieldNames {
+	//	fmt.Println(data)
+	//	newF, isList, index := parseField(f)
+	//	if isList {
+	//		data = data.FieldByName(newF).Index(index)
+	//	} else {
+	//		data = data.FieldByName(newF)
+	//	}
+	//}
+	//fmt.Println(data.String())
+	//data.Set(reflect.ValueOf([]string{"test"}))
+	//fmt.Printf("type: %T\nvalue: %v\n", data, data)
+
+	//switch op {
+	//case "append-list":
+	//default:
+	//	err := errors.Errorf("operation %s isn't supported\n", op)
+	//	return err
+	//}
+
+	//err = WriteYaml(&yamlStruct, "out.yaml")
+	//if err != nil {
+	//	fmt.Printf("cannot write yaml: %s\n", err)
+	//}
+
+	return nil
+}
 
 func main() {
 
 	var mc MachineConfig
 
-	ReadYaml("in.yaml", &mc)
-	mc.Spec.Config.Passwd.Users[0].SshAuthorizedKeys[0] = "new ssh key"
-	WriteYaml(&mc, "out.yaml")
-
-	//patchMastersIgnition("in.yaml", "Spec.Config.Passwd.Users[0].SshAuthorizedKeys",
-	//	"test-string", "append-list", mc)
+	patchMastersIgnition("in.yaml", "Spec.Config.Passwd.Users[0].SshAuthorizedKeys",
+		"new ssh key", "append-list", &mc)
 
 	//mcs := structs.New(&mc)
 	//fmt.Println(mcs.Field("Spec").Field("Config").Field("Passwd").Field("Users").Value().([]User)[0])
