@@ -126,15 +126,9 @@ func main() {
 
 	var mc MachineConfig
 
+	newSshKey := "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDd84cK8wIaqB7LKAfJ4354dkqe1sywdw9KehVdiupseMzrkmX72Kn2vtZwSYU+xQvmJPfJxOnGCH6DIjN4fwph8jLoQD3bw1b0pLc6vXFm5ekN3472BHHJHUcl22MXeOcLBVLiqr30sZ8WT7RFdwe9glu2W+RlVWetb/fUxQFm2ce67DmT1cVWWKtVGBcfKwavYGb+gs2EPX3vu0OVHO+yyVV/FaCDwUEzRrcg0O4NX5jL3nqd6kXvuVZv9yGIrAyeZUvAQYwf2Ls4/++Cp0Z1BVW2u54sTX2rE2OAQl+FxvFS28sHvlrDGB4ING/2s9nQ/Rb01riaSiP2Bc1OdTYt ybettan@dhcp-3-107.tlv.redhat.com"
+
 	patchMastersIgnition("in.yaml", "Spec.Config.Passwd.Users[0].SshAuthorizedKeys",
-		"new ssh key", "append-list", &mc)
-
-	//mcs := structs.New(&mc)
-	//fmt.Println(mcs.Field("Spec").Field("Config").Field("Passwd").Field("Users").Value().([]User)[0])
-	//fmt.Printf("type: %T\nvalue: %v\n", reflect.ValueOf(mc), reflect.ValueOf(mc))
-	//reflect.ValueOf(mc).FieldByName("Spec")
-	//fmt.Println(reflect.ValueOf(mc).FieldByName(fields[0]).FieldByName(fields[1]).FieldByName(fields[2]).FieldByName("Users").Index(0).FieldByName("SshAuthorizedKeys").Index(0))
-
-	//newSshKey := "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDd84cK8wIaqB7LKAfJ4354dkqe1sywdw9KehVdiupseMzrkmX72Kn2vtZwSYU+xQvmJPfJxOnGCH6DIjN4fwph8jLoQD3bw1b0pLc6vXFm5ekN3472BHHJHUcl22MXeOcLBVLiqr30sZ8WT7RFdwe9glu2W+RlVWetb/fUxQFm2ce67DmT1cVWWKtVGBcfKwavYGb+gs2EPX3vu0OVHO+yyVV/FaCDwUEzRrcg0O4NX5jL3nqd6kXvuVZv9yGIrAyeZUvAQYwf2Ls4/++Cp0Z1BVW2u54sTX2rE2OAQl+FxvFS28sHvlrDGB4ING/2s9nQ/Rb01riaSiP2Bc1OdTYt ybettan@dhcp-3-107.tlv.redhat.com"
+		newSshKey, "append-list", &mc)
 
 }
