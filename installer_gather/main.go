@@ -16,9 +16,9 @@ type Labels struct {
 }
 
 type Metadata struct {
-	CreationTimestamp time.Time `yaml:"creationTimestamp"`
-	Labels            Labels    `yaml:"labels"`
-	Name              string    `yaml:"name"`
+	CreationTimestamp *time.Time `yaml:"creationTimestamp"`
+	Labels            Labels     `yaml:"labels"`
+	Name              string     `yaml:"name"`
 }
 
 type Ignition struct {
@@ -40,10 +40,10 @@ type Config struct {
 }
 
 type Spec struct {
-	Config          Config `yaml:"config"`
-	Fips            bool   `yaml:"fips"`
-	KernelArguments string `yaml:"kernelArguments"`
-	OsImageURL      string `yaml:"osImageURL"`
+	Config          Config  `yaml:"config"`
+	Fips            bool    `yaml:"fips"`
+	KernelArguments *string `yaml:"kernelArguments"`
+	OsImageURL      *string `yaml:"osImageURL"`
 }
 
 type MachineConfig struct {
