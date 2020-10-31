@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"time"
 
@@ -89,14 +90,12 @@ func WriteYaml(fromObj interface{}, toFile string) error {
 
 func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct interface{}) error {
 
-	ReadYaml("in.yaml", yamlStruct)
-	yamlStruct.(*MachineConfig).Spec.Config.Passwd.Users[0].SshAuthorizedKeys[0] = "new ssh key"
-	WriteYaml(yamlStruct, "out.yaml")
+	err := ReadYaml("in.yaml", yamlStruct)
+	if err != nil {
+		fmt.Printf("cannot read yaml: %s\n", err)
+	}
 
-	//err := ReadYaml("in.yaml", yamlStruct)
-	//if err != nil {
-	//	fmt.Printf("cannot read yaml: %s\n", err)
-	//}
+	yamlStruct.(*MachineConfig).Spec.Config.Passwd.Users[0].SshAuthorizedKeys[0] = "new ssh key"
 
 	//fieldNames := strings.Split(fieldName, ".")
 
@@ -121,10 +120,10 @@ func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct in
 	//	return err
 	//}
 
-	//err = WriteYaml(&yamlStruct, "out.yaml")
-	//if err != nil {
-	//	fmt.Printf("cannot write yaml: %s\n", err)
-	//}
+	err = WriteYaml(yamlStruct, "out.yaml")
+	if err != nil {
+		fmt.Printf("cannot write yaml: %s\n", err)
+	}
 
 	return nil
 }
