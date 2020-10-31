@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
+	"reflect"
 	"time"
 
 	"github.com/pkg/errors"
@@ -95,7 +96,16 @@ func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct in
 		fmt.Printf("cannot read yaml: %s\n", err)
 	}
 
-	yamlStruct.(*MachineConfig).Spec.Config.Passwd.Users[0].SshAuthorizedKeys[0] = "new ssh key"
+	reflect.
+		ValueOf(yamlStruct).
+		Elem().
+		FieldByName("Spec").
+		FieldByName("Config").
+		FieldByName("Passwd").
+		FieldByName("Users").
+		Index(0).
+		FieldByName("SshAuthorizedKeys").
+		Set(reflect.ValueOf([]string{"new ssh key"}))
 
 	//fieldNames := strings.Split(fieldName, ".")
 
