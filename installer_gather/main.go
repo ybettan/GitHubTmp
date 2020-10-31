@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"reflect"
+	"strings"
 	"time"
 
 	"github.com/pkg/errors"
@@ -78,16 +79,15 @@ func WriteYaml(fromObj interface{}, toFile string) error {
 	return nil
 }
 
-//
-//func parseField(s string) (string, bool, int) {
-//	if strings.HasSuffix(s, "]") {
-//		newS := strings.Split(s, "[")[0]
-//		index := int(s[len(s)-2] - '0')
-//		return newS, true, index
-//	} else {
-//		return s, false, 0
-//	}
-//}
+func parseField(s string) (string, bool, int) {
+	if strings.HasSuffix(s, "]") {
+		newS := strings.Split(s, "[")[0]
+		index := int(s[len(s)-2] - '0')
+		return newS, true, index
+	} else {
+		return s, false, 0
+	}
+}
 
 func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct interface{}) error {
 
@@ -96,32 +96,17 @@ func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct in
 		fmt.Printf("cannot read yaml: %s\n", err)
 	}
 
-	reflect.
-		ValueOf(yamlStruct).
-		Elem().
-		FieldByName("Spec").
-		FieldByName("Config").
-		FieldByName("Passwd").
-		FieldByName("Users").
-		Index(0).
-		FieldByName("SshAuthorizedKeys").
-		Set(reflect.ValueOf([]string{"new ssh key"}))
+	fieldNames := strings.Split(fieldName, ".")
+	data := reflect.ValueOf(yamlStruct).Elem()
+	for _, f := range fieldNames {
+		newF, isList, index := parseField(f)
+		data = data.FieldByName(newF)
+		if isList {
+			data = data.Index(index)
+		}
+	}
 
-	//fieldNames := strings.Split(fieldName, ".")
-
-	//data := reflect.ValueOf(yamlStruct)
-	//for _, f := range fieldNames {
-	//	fmt.Println(data)
-	//	newF, isList, index := parseField(f)
-	//	if isList {
-	//		data = data.FieldByName(newF).Index(index)
-	//	} else {
-	//		data = data.FieldByName(newF)
-	//	}
-	//}
-	//fmt.Println(data.String())
-	//data.Set(reflect.ValueOf([]string{"test"}))
-	//fmt.Printf("type: %T\nvalue: %v\n", data, data)
+	data.Set(reflect.ValueOf([]string{"new ssh key"}))
 
 	//switch op {
 	//case "append-list":
