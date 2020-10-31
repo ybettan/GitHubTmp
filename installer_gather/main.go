@@ -106,7 +106,7 @@ func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct in
 		}
 	}
 
-	data.Set(reflect.ValueOf([]string{"new ssh key"}))
+	data.Set(reflect.Append(data, reflect.ValueOf(newData)))
 
 	//switch op {
 	//case "append-list":
