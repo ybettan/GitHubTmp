@@ -89,13 +89,7 @@ func parseField(s string) (string, bool, int) {
 	}
 }
 
-func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct interface{}) error {
-
-	err := ReadYaml("in.yaml", yamlStruct)
-	if err != nil {
-		fmt.Printf("cannot read yaml: %s\n", err)
-	}
-
+func getFieldFromFieldName(yamlStruct interface{}, fieldName string) reflect.Value {
 	fieldNames := strings.Split(fieldName, ".")
 	data := reflect.ValueOf(yamlStruct).Elem()
 	for _, f := range fieldNames {
@@ -105,6 +99,17 @@ func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct in
 			data = data.Index(index)
 		}
 	}
+	return data
+}
+
+func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct interface{}) error {
+
+	err := ReadYaml("in.yaml", yamlStruct)
+	if err != nil {
+		fmt.Printf("cannot read yaml: %s\n", err)
+	}
+
+	data := getFieldFromFieldName(yamlStruct, fieldName)
 
 	switch op {
 	case "append-list":
