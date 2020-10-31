@@ -106,14 +106,13 @@ func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct in
 		}
 	}
 
-	data.Set(reflect.Append(data, reflect.ValueOf(newData)))
-
-	//switch op {
-	//case "append-list":
-	//default:
-	//	err := errors.Errorf("operation %s isn't supported\n", op)
-	//	return err
-	//}
+	switch op {
+	case "append-list":
+		data.Set(reflect.Append(data, reflect.ValueOf(newData)))
+	default:
+		err := errors.Errorf("operation %s isn't supported\n", op)
+		return err
+	}
 
 	err = WriteYaml(yamlStruct, "out.yaml")
 	if err != nil {
