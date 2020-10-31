@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
 	"io/ioutil"
-	"strings"
 	"time"
 
 	"github.com/pkg/errors"
@@ -78,65 +76,65 @@ func WriteYaml(fromObj interface{}, toFile string) error {
 	return nil
 }
 
-func parseField(s string) (string, bool, int) {
-	if strings.HasSuffix(s, "]") {
-		newS := strings.Split(s, "[")[0]
-		index := int(s[len(s)-2] - '0')
-		return newS, true, index
-	} else {
-		return s, false, 0
-	}
-}
+//
+//func parseField(s string) (string, bool, int) {
+//	if strings.HasSuffix(s, "]") {
+//		newS := strings.Split(s, "[")[0]
+//		index := int(s[len(s)-2] - '0')
+//		return newS, true, index
+//	} else {
+//		return s, false, 0
+//	}
+//}
 
-func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct interface{}) error {
-
-	fmt.Printf("type: %T\nvalue: %v\n", yamlStruct, yamlStruct)
-
-	err := ReadYaml("in.yaml", yamlStruct)
-	if err != nil {
-		fmt.Printf("cannot read yaml: %s\n", err)
-	}
-
-	fmt.Printf("type: %T\nvalue: %v\n", yamlStruct, yamlStruct)
-
-	//fieldNames := strings.Split(fieldName, ".")
-
-	//data := reflect.ValueOf(yamlStruct)
-	//for _, f := range fieldNames {
-	//	fmt.Println(data)
-	//	newF, isList, index := parseField(f)
-	//	if isList {
-	//		data = data.FieldByName(newF).Index(index)
-	//	} else {
-	//		data = data.FieldByName(newF)
-	//	}
-	//}
-	//fmt.Println(data.String())
-	//data.Set(reflect.ValueOf([]string{"test"}))
-	//fmt.Printf("type: %T\nvalue: %v\n", data, data)
-
-	//switch op {
-	//case "append-list":
-	//default:
-	//	err := errors.Errorf("operation %s isn't supported\n", op)
-	//	return err
-	//}
-
-	err = WriteYaml(&yamlStruct, "out.yaml")
-	if err != nil {
-		fmt.Printf("cannot write yaml: %s\n", err)
-	}
-
-	return nil
-}
+//func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct interface{}) error {
+//
+//	err := ReadYaml("in.yaml", yamlStruct)
+//	if err != nil {
+//		fmt.Printf("cannot read yaml: %s\n", err)
+//	}
+//
+//	//fieldNames := strings.Split(fieldName, ".")
+//
+//	//data := reflect.ValueOf(yamlStruct)
+//	//for _, f := range fieldNames {
+//	//	fmt.Println(data)
+//	//	newF, isList, index := parseField(f)
+//	//	if isList {
+//	//		data = data.FieldByName(newF).Index(index)
+//	//	} else {
+//	//		data = data.FieldByName(newF)
+//	//	}
+//	//}
+//	//fmt.Println(data.String())
+//	//data.Set(reflect.ValueOf([]string{"test"}))
+//	//fmt.Printf("type: %T\nvalue: %v\n", data, data)
+//
+//	//switch op {
+//	//case "append-list":
+//	//default:
+//	//	err := errors.Errorf("operation %s isn't supported\n", op)
+//	//	return err
+//	//}
+//
+//	//err = WriteYaml(&yamlStruct, "out.yaml")
+//	//if err != nil {
+//	//	fmt.Printf("cannot write yaml: %s\n", err)
+//	//}
+//
+//	return nil
+//}
 
 func main() {
 
 	var mc MachineConfig
-	//fmt.Printf("type: %T\nvalue: %v\n", mc, mc)
 
-	patchMastersIgnition("in.yaml", "Spec.Config.Passwd.Users[0].SshAuthorizedKeys",
-		"test-string", "append-list", mc)
+	ReadYaml("in.yaml", &mc)
+	mc.Spec.Config.Passwd.Users[0].SshAuthorizedKeys[0] = "new ssh key"
+	WriteYaml(&mc, "out.yaml")
+
+	//patchMastersIgnition("in.yaml", "Spec.Config.Passwd.Users[0].SshAuthorizedKeys",
+	//	"test-string", "append-list", mc)
 
 	//mcs := structs.New(&mc)
 	//fmt.Println(mcs.Field("Spec").Field("Config").Field("Passwd").Field("Users").Value().([]User)[0])
