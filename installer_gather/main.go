@@ -43,6 +43,7 @@ type Spec struct {
 	Config          Config  `yaml:"config"`
 	Fips            bool    `yaml:"fips"`
 	KernelArguments *string `yaml:"kernelArguments"`
+	KernelType      *string `yaml:"kernelType"`
 	OsImageURL      *string `yaml:"osImageURL"`
 }
 
