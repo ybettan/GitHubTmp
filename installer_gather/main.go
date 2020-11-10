@@ -111,6 +111,7 @@ func patchMastersIgnition(yamlFile, fieldName, newData, op string, yamlStruct in
 	}
 
 	data := getFieldFromFieldName(yamlStruct, fieldName)
+	data.Set(reflect.ValueOf([]string{}))
 
 	switch op {
 	case "append-list":

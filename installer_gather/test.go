@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
+type LikeString string
+
 func main() {
-	s := "hello"
-	fmt.Println(string(s[1]))
+	fmt.Println([]byte("hello world"))
 }
