@@ -18,7 +18,7 @@ type Labels struct {
 type Metadata struct {
 	CreationTimestamp *time.Time `yaml:"creationTimestamp"`
 	Labels            Labels     `yaml:"labels"`
-	Name              string     `yaml:"name"`
+	Name              string     `json:"name"`
 }
 
 type Ignition struct {
