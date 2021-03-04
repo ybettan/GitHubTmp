@@ -1,0 +1,1654 @@
+===============================================================================================================================
+id: "89250083-c5d2-495a-9657-4df792300768"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host worker-3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host worker-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host worker-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master-3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master-3": status("installed")
+"master-1": status("installed")
+"worker-3": status("installed")
+"master-2": status("installed")
+"worker-1": status("installed")
+"worker-2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "2fcc428b-3bdc-49ee-acaf-6cf7d31dd935"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host test-cluster-assisted-installer-master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host test-cluster-assisted-installer-master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host test-cluster-assisted-installer-master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"test-cluster-assisted-installer-master-1": status("installed")
+"test-cluster-assisted-installer-master-0": status("installed")
+"test-cluster-assisted-installer-master-2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "0fdd3b6f-0cd1-4f23-b0ca-fc36378366e2"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host rhhi-cap3m.lab.eng.blr.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host rhhi-cap2m.lab.eng.blr.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host rhhi-cap1m.lab.eng.blr.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"rhhi-cap2m.lab.eng.blr.redhat.com": status("installed")
+"rhhi-cap1m.lab.eng.blr.redhat.com": status("installed")
+"rhhi-cap3m.lab.eng.blr.redhat.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "b795b8f7-ad00-4fc7-8f42-a2a9d2e40ad5"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13571 "Host master: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master": status("installed")
+"master2": status("installed")
+"master3": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "df08221b-8dab-442a-8613-d458b7bab186"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host master-0-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker-0-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker-0-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host worker-0-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host master-0-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host master-0-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"worker-1-0.titan90cluster-0.qe.lab.redhat.com": status("disabled")
+"worker-1-2.titan90cluster-0.qe.lab.redhat.com": status("disabled")
+"worker-0-0": status("installed")
+"master-1-1.titan90cluster-0.qe.lab.redhat.com": status("disabled")
+"master-0-2": status("installed")
+"worker-0-2": status("installed")
+"master-0-0": status("installed")
+"master-0-1": status("installed")
+"master-1-0.titan90cluster-0.qe.lab.redhat.com": status("disabled")
+"worker-0-1": status("installed")
+"master-1-2.titan90cluster-0.qe.lab.redhat.com": status("disabled")
+===============================================================================================================================
+===============================================================================================================================
+id: "d71815aa-f323-49c5-a1e7-f57e5d661890"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13571 "Host master3.os4.zentrale.spi.de: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host master2.os4.zentrale.spi.de: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host master1.os4.zentrale.spi.de: validation 'has-min-valid-disks' that used to succeed is now failing"
+13569 "Host worker3.os4.zentrale.spi.de: validation 'has-min-valid-disks' that used to succeed is now failing"
+13569 "Host worker1.os4.zentrale.spi.de: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"worker1.os4.zentrale.spi.de": status("installed")
+"master2.os4.zentrale.spi.de": status("installed")
+"worker3.os4.zentrale.spi.de": status("installed")
+"master1.os4.zentrale.spi.de": status("installed")
+"master3.os4.zentrale.spi.de": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "fc1dfa97-e04d-45cb-a1c4-b79ef1839528"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host node1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host node0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host node2: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"node1": status("installed")
+"node2": status("installed")
+"node0": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "a409d082-5235-49ad-bfa9-6c8449edc7be"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host ipi2.rhcasalab.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host ipi3.rhcasalab.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host ipi1.rhcasalab.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"ipi3.rhcasalab.com": status("installed")
+"ipi2.rhcasalab.com": status("installed")
+"ipi1.rhcasalab.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "6cfe4150-6fa2-477e-869c-fa329e272904"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host h06.sat.lab.tlv.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host h04.sat.lab.tlv.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host h03.sat.lab.tlv.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"h04.sat.lab.tlv.redhat.com": status("installed")
+"h03.sat.lab.tlv.redhat.com": status("installed")
+"h06.sat.lab.tlv.redhat.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "259391dc-e845-4f2d-a94c-a6ac49dfbd1c"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13575 "Host kni1-master-2.cloud.lab.eng.bos.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host kni1-master-1.cloud.lab.eng.bos.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host kni1-worker-0.cloud.lab.eng.bos.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host kni1-master-0.cloud.lab.eng.bos.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"kni1-worker-0.cloud.lab.eng.bos.redhat.com": status("installed")
+"kni1-master-0.cloud.lab.eng.bos.redhat.com": status("installed")
+"kni1-master-2.cloud.lab.eng.bos.redhat.com": status("installed")
+"kni1-master-1.cloud.lab.eng.bos.redhat.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "023e6d2b-4b15-4280-80db-a66c09b9a6f3"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host worker-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host worker-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host worker-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"worker-2": status("installed")
+"master-1": status("installed")
+"worker-0": status("installed")
+"master-0": status("installed")
+"master-2": status("installed")
+"worker-1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "8f79a11b-44e0-4496-aadb-076def65ee00"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host ocp-master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host ocp-master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host ocp-master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"ocp-master-2": status("installed")
+"ocp-master-1": status("installed")
+"ocp-master-0": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "8e28d6dd-2ca3-4dfc-9dbe-5b6e01bd1928"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host liat222210981-test-cluster-assisted-installer-master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host liat222210981-test-cluster-assisted-installer-master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host liat222210981-test-cluster-assisted-installer-master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"liat222210981-test-cluster-assisted-installer-master-2": status("installed")
+"liat222210981-test-cluster-assisted-installer-master-1": status("installed")
+"liat222210981-test-cluster-assisted-installer-master-0": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "5414015e-edb3-4b9a-a489-5e6af56984ff"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host controlplane1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host compute1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host controlplane3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host controlplane2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host compute2: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"compute2": status("installed")
+"controlplane3": status("installed")
+"compute1": status("installed")
+"controlplane1": status("installed")
+"controlplane2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "44e81947-f1e6-4454-9ffc-0558f6d75e43"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host rhhi-cap3m.lab.eng.blr.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host rhhi-cap2m.lab.eng.blr.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host rhhi-cap1m.lab.eng.blr.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"rhhi-cap2m.lab.eng.blr.redhat.com": status("installed")
+"rhhi-cap1m.lab.eng.blr.redhat.com": status("installed")
+"rhhi-cap3m.lab.eng.blr.redhat.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "f817073e-b5bd-41c0-a0db-8fa5e8b0198d"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host ocp3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host ocp1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host ocp5: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host ocp2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13569 "Host ocp4: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"ocp4": status("installed")
+"ocp5": status("installed")
+"ocp3": status("installed")
+"ocp2": status("installed")
+"ocp1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "4dc4e084-eda7-44fa-8319-eec270fca851"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host openworker2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host openworker1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host openmaster1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host openworker3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host openmaster3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host openmaster2: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"openworker2": status("installed")
+"openmaster1": status("installed")
+"openworker1": status("installed")
+"openmaster3": status("installed")
+"openworker3": status("installed")
+"openmaster2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "4d6e84db-458c-4dd8-be95-cdd52ce91b15"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host node12.pemlab.rdu2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host node11.pemlab.rdu2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host node10.pemlab.rdu2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"node12.pemlab.rdu2.redhat.com": status("installed")
+"node10.pemlab.rdu2.redhat.com": status("installed")
+"node11.pemlab.rdu2.redhat.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "1c5d7ed7-b643-4f43-badd-ebc1fc5dee40"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13575 "Host ocp4-node6: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host ocp4-node5: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host ocp4-node4: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host ocp4-node3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host ocp4-node2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host ocp4-node1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"ocp4-node4": status("installed")
+"ocp4-node5": status("installed")
+"ocp4-node3": status("installed")
+"ocp4-node6": status("installed")
+"ocp4-node2": status("installed")
+"ocp4-node1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "595e56b0-95da-41f6-9723-f4728f657c07"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host test-cluster-assisted-installer-master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host test-cluster-assisted-installer-worker-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host test-cluster-assisted-installer-master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host test-cluster-assisted-installer-master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"test-cluster-assisted-installer-worker-0": status("installed")
+"test-cluster-assisted-installer-master-1": status("installed")
+"test-cluster-assisted-installer-master-0": status("installed")
+"test-cluster-assisted-installer-master-2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "e50c3c34-1e32-437f-ab5b-787523d9cfd9"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host test-cluster-assisted-installer-master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host test-cluster-assisted-installer-master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host test-cluster-assisted-installer-master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"test-cluster-assisted-installer-master-2": status("installed")
+"test-cluster-assisted-installer-master-0": status("installed")
+"test-cluster-assisted-installer-master-1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "7fb052fc-5572-4562-a8f9-3fcd30be8a6b"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host worker-0-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker-0-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-0-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-0-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-0-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"worker-0-0": status("installed")
+"worker-0-1": status("installed")
+"master-0-0": status("installed")
+"master-0-2": status("installed")
+"master-0-1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "a9b2407a-5252-47b2-903c-359ad6f509a6"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host v2202010113274129228.powersrv.de: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host v2202010113274129227.goodsrv.de: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host v2202010113274129225.supersrv.de: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"v2202010113274129228.powersrv.de": status("installed")
+"v2202010113274129225.supersrv.de": status("installed")
+"v2202010113274129227.goodsrv.de": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "e518b70b-c641-491e-9d86-57da603db751"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host vm-11-48.lab.eng.tlv2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host vm-11-45.lab.eng.tlv2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host vm-11-49.lab.eng.tlv2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host vm-11-47.lab.eng.tlv2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13569 "Host vm-11-46.lab.eng.tlv2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"vm-11-49.lab.eng.tlv2.redhat.com": status("installed")
+"vm-11-47.lab.eng.tlv2.redhat.com": status("installed")
+"vm-11-45.lab.eng.tlv2.redhat.com": status("installed")
+"vm-11-48.lab.eng.tlv2.redhat.com": status("installed")
+"vm-11-46.lab.eng.tlv2.redhat.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "058da27c-7f26-4711-8770-d0a50cdd4b57"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host okd-node3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host okd-node2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host okd-node1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"okd-node3": status("installed")
+"okd-node1": status("installed")
+"okd-node2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "d57ccde5-7e15-465c-8a4b-163449ade88d"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host master-01: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-03: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host master-02: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master-02": status("installed")
+"master-01": status("installed")
+"master-03": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "e2f05cff-b4a1-47e8-8783-1b644f1edf12"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host worker1.demo.lab: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master3.demo.lab: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker2.demo.lab: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master2.demo.lab: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master1.demo.lab: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master1.demo.lab": status("installed")
+"master2.demo.lab": status("installed")
+"worker2.demo.lab": status("installed")
+"master3.demo.lab": status("installed")
+"worker1.demo.lab": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "f3a07b36-8e08-4281-8637-cec724f5fec8"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host worker01: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master03: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master01: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host master02: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master03": status("installed")
+"master01": status("installed")
+"worker01": status("installed")
+"master02": status("installed")
+"worker02": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "985e847c-7faa-48d4-b478-e01f5a47ccc2"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13577 "Host seildo-os-poc-m3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host seildo-os-poc-w1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host seildo-os-poc-m2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host seildo-os-poc-w3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host seildo-os-poc-w2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host seildo-os-poc-m1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"seildo-os-poc-w3": status("installed")
+"seildo-os-poc-m1": status("installed")
+"seildo-os-poc-w1": status("installed")
+"seildo-os-poc-m2": status("installed")
+"seildo-os-poc-m3": status("installed")
+"seildo-os-poc-w2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "08f2796b-58c0-4a79-a826-4e1a94ec9481"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host openshift-master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host openshift-worker-3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host openshift-worker-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host openshift-master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host openshift-master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host openshift-worker-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host openshift-worker-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"openshift-worker-2": status("installed")
+"openshift-worker-0": status("installed")
+"openshift-worker-1": status("installed")
+"openshift-master-0": status("installed")
+"openshift-worker-3": status("installed")
+"openshift-master-2": status("installed")
+"openshift-master-1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "33938773-5fa8-41ca-8745-9eacda413ad1"
+status: "insufficient"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host ms1.mycluster.org: validation 'connected' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"wk1.mycluster.org": status("resetting-pending-user-action")
+"wk0.mycluster.org": status("resetting-pending-user-action")
+"ms2.mycluster.org": status("resetting-pending-user-action")
+"ms0.mycluster.org": status("resetting-pending-user-action")
+"ms1.mycluster.org": status("resetting-pending-user-action")
+===============================================================================================================================
+===============================================================================================================================
+id: "d4c11783-800a-4b88-b39e-c9e96c5befb6"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host master3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master2": status("installed")
+"master3": status("installed")
+"master1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "c15e12f9-d8cc-46aa-a803-b5c3ec541186"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13570 "Host omaster3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host omaster2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host omaster1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"omaster1": status("installed")
+"omaster3": status("installed")
+"omaster2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "5c522a07-135d-44c3-a0b2-5ba5c3530552"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host wor-02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host wor-01: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host mas-03: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host mas-02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host mas-01: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host inf-03: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host inf-02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host inf-01: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"wor-02": status("installed")
+"mas-02": status("installed")
+"mas-03": status("installed")
+"wor-01": status("installed")
+"inf-03": status("installed")
+"mas-01": status("installed")
+"inf-02": status("installed")
+"inf-01": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "9a283f5e-83bc-4bb4-ac68-37ad4d5cd825"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host master1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host worker2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master3": status("installed")
+"worker3": status("installed")
+"worker1": status("installed")
+"worker2": status("installed")
+"master2": status("installed")
+"master1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "19d8c699-dfa4-4fc8-b95f-b657d52c5d59"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host node5: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host node7: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host node6: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host node4: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host node3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host node2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host node1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"node1": status("installed")
+"node6": status("installed")
+"node3": status("installed")
+"node2": status("installed")
+"node4": status("installed")
+"node5": status("installed")
+"node7": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "ea5fefa3-4b7c-4672-89d7-a542b642217a"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host worker-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host worker-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host worker-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master-1": status("installed")
+"worker-0": status("installed")
+"master-0": status("installed")
+"worker-1": status("installed")
+"worker-2": status("installed")
+"master-2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "c2554b62-6bea-4573-a780-25bc21f8334d"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host worker-1.ocp.b1b.in: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker-2.ocp.b1b.in: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker-0.ocp.b1b.in: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-2.ocp.b1b.in: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-1.ocp.b1b.in: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-0.ocp.b1b.in: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master-0.ocp.b1b.in": status("installed")
+"worker-0.ocp.b1b.in": status("installed")
+"master-2.ocp.b1b.in": status("installed")
+"worker-1.ocp.b1b.in": status("installed")
+"worker-2.ocp.b1b.in": status("installed")
+"master-1.ocp.b1b.in": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "7a2a5129-deda-4cb6-b19b-6764190b65d2"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host dumbledore.herley.local: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host snape.herley.local: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host mcgonagall.herley.local: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"dumbledore.herley.local": status("installed")
+"mcgonagall.herley.local": status("installed")
+"snape.herley.local": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "a969e2fb-628e-4f95-b418-edf6fc145fce"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host master-tr25m-3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-tr25m-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-tr25m-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13569 "Host worker-tr25m-4: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master-tr25m-3": status("installed")
+"master-tr25m-2": status("installed")
+"master-tr25m-1": status("installed")
+"uzel-1": status("error")
+"worker-tr25m-4": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "93d03c27-325f-4a6b-ae15-01a886978543"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host worker-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host worker-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host worker-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host mgmt-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host mgmt-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host mgmt-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"mgmt-2": status("installed")
+"worker-0": status("installed")
+"mgmt-1": status("installed")
+"worker-2": status("installed")
+"mgmt-0": status("installed")
+"worker-1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "0928803b-f17e-4914-b5ca-810bdd156a23"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host worker1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host worker-main: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host master1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host master0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"worker-main": status("installed")
+"master0": status("installed")
+"worker1": status("installed")
+"master2": status("installed")
+"master1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "797250ab-106c-4cd6-9ce9-85fbc5b8c3e2"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host master-1.ocp.variantweb.net: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-0.ocp.variantweb.net: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host master-2.ocp.variantweb.net: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master-1.ocp.variantweb.net": status("installed")
+"master-0.ocp.variantweb.net": status("installed")
+"master-2.ocp.variantweb.net": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "78f906f0-d5db-40b7-82dc-22e98180acef"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host vm-9-19.lab.eng.tlv2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host vm-9-13.lab.eng.tlv2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host vm-9-20.lab.eng.tlv2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host vm-9-10.lab.eng.tlv2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host vm-9-11.lab.eng.tlv2.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"vm-9-11.lab.eng.tlv2.redhat.com": status("installed")
+"vm-9-20.lab.eng.tlv2.redhat.com": status("installed")
+"vm-9-10.lab.eng.tlv2.redhat.com": status("installed")
+"vm-9-13.lab.eng.tlv2.redhat.com": status("installed")
+"vm-9-19.lab.eng.tlv2.redhat.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "5d353200-ab66-4e55-84fa-5385a611e70c"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host master03: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master01: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master01": status("installed")
+"master03": status("installed")
+"master02": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "4649d954-8719-4d28-beaf-849f2b64a90f"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host dhcp-7-37.nebulon.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host dell-sas5.nebulon.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host dell-sas4.nebulon.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"dhcp-7-37.nebulon.com": status("installed")
+"dell-sas4.nebulon.com": status("installed")
+"dell-sas5.nebulon.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "ad0a7144-cb24-4415-abe8-5e4f554374e0"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host master3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master1": status("installed")
+"master3": status("installed")
+"master2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "2c4062af-08d1-481f-a13a-f02403b0003f"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host worker3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host worker2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host worker1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host master3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host master1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host bootstrap: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"bootstrap": status("installed")
+"master2": status("installed")
+"worker3": status("installed")
+"worker1": status("installed")
+"master1": status("installed")
+"master3": status("installed")
+"worker2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "48e96191-8403-49f6-a994-9f2e5fc57fd7"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host os-master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host oc-worker-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host oc-worker-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host oc-master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host oc-master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"oc-worker-0": status("installed")
+"oc-master-2": status("installed")
+"os-master-1": status("installed")
+"oc-worker-1": status("installed")
+"oc-master-0": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "931ad22d-1859-4075-b9c8-4fd988494ab1"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host oshmst03: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host oshmst02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host oshmst01: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"oshmst02": status("installed")
+"oshmst01": status("installed")
+"oshmst03": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "a3826624-bdf1-4e47-9b33-df4ecaac8799"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host openshift-worker-1.ocp4.mveldomainocp4.es: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host openshift-master-2.ocp4.mveldomainocp4.es: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host openshift-master-1.ocp4.mveldomainocp4.es: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host openshift-worker-0.ocp4.mveldomainocp4.es: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host openshift-master-0.ocp4.mveldomainocp4.es: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"openshift-master-0.ocp4.mveldomainocp4.es": status("installed")
+"openshift-worker-0.ocp4.mveldomainocp4.es": status("installed")
+"openshift-worker-1.ocp4.mveldomainocp4.es": status("installed")
+"openshift-master-1.ocp4.mveldomainocp4.es": status("installed")
+"openshift-master-2.ocp4.mveldomainocp4.es": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "520f3bf5-4c65-4233-b0b1-7044243eb34d"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host worker1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host master3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host master1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host worker3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host worker2: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"worker3": status("installed")
+"master1": status("installed")
+"worker2": status("installed")
+"master2": status("installed")
+"master3": status("installed")
+"worker1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "6f710cd4-779d-400c-8620-2ea83d7634c9"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host seliicvh00749.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host seliicvh00748.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host seliicvh00747.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host seliicvh00752.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host seliicvh00751.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host seliicvh00750.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"seliicvh00750.exilis.seli.gic.ericsson.se": status("installed")
+"seliicvh00752.exilis.seli.gic.ericsson.se": status("installed")
+"seliicvh00747.exilis.seli.gic.ericsson.se": status("installed")
+"seliicvh00749.exilis.seli.gic.ericsson.se": status("installed")
+"seliicvh00748.exilis.seli.gic.ericsson.se": status("installed")
+"seliicvh00751.exilis.seli.gic.ericsson.se": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "942f1806-8c1d-47ef-8d71-db84035b3704"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host control-plane-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host control-plane-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host compute-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host control-plane-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host compute-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"control-plane-0": status("installed")
+"control-plane-1": status("installed")
+"compute-1": status("installed")
+"control-plane-2": status("installed")
+"compute-0": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "c6b6c555-b97e-4866-bc1d-c3b3fcfc0360"
+status: "insufficient"
+-------------------------------------------------------------------------------------------------------------------------------
+13571 "Host ocp03.bkup.lab: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host ocp01.bkup.lab: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host ocp02.bkup.lab: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"ocp03.bkup.lab": status("resetting-pending-user-action")
+"ocp02.bkup.lab": status("resetting-pending-user-action")
+"ocp01.bkup.lab": status("resetting-pending-user-action")
+===============================================================================================================================
+===============================================================================================================================
+id: "d97788d7-893d-4190-a8db-11e57a31e940"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13571 "Host demo-mas8-control02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host demo-mas8-control01: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host demo-mas8-control03: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"demo-mas8-control03": status("installed")
+"demo-mas8-control01": status("installed")
+"demo-mas8-control02": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "a7fa271a-1d48-4cd5-af6d-9d2f26e38f6d"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13571 "Host srv10903: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host srv10902: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host srv10901: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"srv10901": status("installed")
+"srv10902": status("installed")
+"srv10903": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "c4564f9a-32a2-4d3c-a5d5-908d2ee47c4c"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host seliicvh00741.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host seliicvh00738.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host seliicvh00742.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host seliicvh00737.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host seliicvh00740.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host seliicvh00739.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"seliicvh00739.exilis.seli.gic.ericsson.se": status("installed")
+"seliicvh00742.exilis.seli.gic.ericsson.se": status("installed")
+"seliicvh00741.exilis.seli.gic.ericsson.se": status("installed")
+"seliicvh00740.exilis.seli.gic.ericsson.se": status("installed")
+"seliicvh00738.exilis.seli.gic.ericsson.se": status("installed")
+"seliicvh00737.exilis.seli.gic.ericsson.se": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "010167af-7637-4b17-bb7d-91251cb7b6a1"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host worker2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host worker1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host master1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host master0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master2": status("installed")
+"master0": status("installed")
+"worker2": status("installed")
+"master1": status("installed")
+"worker1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "967fa9f5-231b-49e7-b1a0-df6dbf84b92a"
+status: "insufficient"
+-------------------------------------------------------------------------------------------------------------------------------
+   3 "Host localhost: validation 'connected' that used to succeed is now failing"
+   1 "Host master1: validation 'ntp-synced' that used to succeed is now failing"
+   1 "Host master1: validation 'connected' that used to succeed is now failing"
+   1 "Host localhost: validation 'ntp-synced' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master2": status("resetting-pending-user-action")
+"master1": status("resetting-pending-user-action")
+"master3": status("resetting-pending-user-action")
+===============================================================================================================================
+===============================================================================================================================
+id: "18378f4b-6856-4265-835d-f93d983d4a01"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13575 "Host worker-0-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host worker-0-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host master-0-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host master-0-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host master-0-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master-0-1": status("installed")
+"master-0-0": status("installed")
+"worker-0-1": status("installed")
+"master-0-2": status("installed")
+"worker-0-0": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "e6c4bc06-3366-4183-a1e8-b1cfbd8c9271"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host openshift3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host openshift1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host openshift2: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"openshift3": status("installed")
+"openshift2": status("installed")
+"openshift1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "c8bcd8a4-9622-4111-9250-d6f7ae6fd8ad"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host h06.sat.lab.tlv.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host h03.sat.lab.tlv.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host h05.sat.lab.tlv.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host h04.sat.lab.tlv.redhat.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"h05.sat.lab.tlv.redhat.com": status("installed")
+"h04.sat.lab.tlv.redhat.com": status("installed")
+"h03.sat.lab.tlv.redhat.com": status("installed")
+"h06.sat.lab.tlv.redhat.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "42489f9e-7c11-4931-ab88-c52d22e87cb2"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host worker2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host worker1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host cluster3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host cluster2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host cluster1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"worker1": status("installed")
+"worker2": status("installed")
+"cluster2": status("installed")
+"cluster3": status("installed")
+"cluster1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "6735fbe3-3439-43e1-aec2-5aeba1f8db5c"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host os46-control-plane-2.lab.weyham.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host os46-worker-2.lab.weyham.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host os46-worker-1.lab.weyham.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host os46-control-plane-3.lab.weyham.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host os46-control-plane-1.lab.weyham.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"os46-worker-1.lab.weyham.com": status("installed")
+"os46-control-plane-2.lab.weyham.com": status("installed")
+"os46-control-plane-1.lab.weyham.com": status("installed")
+"os46-worker-2.lab.weyham.com": status("installed")
+"os46-control-plane-3.lab.weyham.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "9669ded9-d167-4bb9-9b3f-8c1a2fd17f08"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13575 "Host b4290f6.online-server.cloud: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host 5768645.online-server.cloud: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host cfcdeed.online-server.cloud: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host c4d6a6d.online-server.cloud: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host aa2c239.online-server.cloud: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"5768645.online-server.cloud": status("installed")
+"b4290f6.online-server.cloud": status("installed")
+"aa2c239.online-server.cloud": status("installed")
+"c4d6a6d.online-server.cloud": status("installed")
+"cfcdeed.online-server.cloud": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "d180830c-8e16-4b81-a90a-342ed972f0f5"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13571 "Host worker-0-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker-0-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-0-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-0-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13569 "Host master-0-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master-0-2": status("installed")
+"worker-0-0": status("installed")
+"master-0-0": status("installed")
+"master-0-1": status("installed")
+"worker-0-1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "5e15f482-7195-4cf0-9841-223bcaa02e1b"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host worker2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host worker3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host worker1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host master1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master3: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"worker2": status("installed")
+"worker1": status("installed")
+"master3": status("installed")
+"master2": status("installed")
+"master1": status("installed")
+"worker3": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "66fbdb32-6b0b-493f-afbb-c466fd225ea5"
+status: "insufficient"
+-------------------------------------------------------------------------------------------------------------------------------
+ 633 "Host master2: validation 'connected' that used to succeed is now failing"
+ 117 "Host worker-node2: validation 'connected' that used to succeed is now failing"
+ 111 "Host worker-node2: validation 'belongs-to-majority-group' that used to succeed is now failing"
+  93 "Host worker-node3: validation 'connected' that used to succeed is now failing"
+  83 "Host worker-node1: validation 'belongs-to-majority-group' that used to succeed is now failing"
+  60 "Host worker-node1: validation 'connected' that used to succeed is now failing"
+  58 "Host worker-node3: validation 'belongs-to-majority-group' that used to succeed is now failing"
+  56 "Host master3: validation 'connected' that used to succeed is now failing"
+  18 "Host worker-node3: validation 'ntp-synced' that used to succeed is now failing"
+  12 "Host worker-node1: validation 'ntp-synced' that used to succeed is now failing"
+  10 "Host master1: validation 'connected' that used to succeed is now failing"
+   7 "Host worker-node2: validation 'ntp-synced' that used to succeed is now failing"
+   7 "Host master3: validation 'ntp-synced' that used to succeed is now failing"
+   7 "Host master2: validation 'ntp-synced' that used to succeed is now failing"
+   7 "Host master1: validation 'ntp-synced' that used to succeed is now failing"
+   5 "Host localhost: validation 'hostname-unique' that used to succeed is now failing"
+   4 "Host worker-node3: validation 'container-images-available' that used to succeed is now failing"
+   4 "Host master2: validation 'belongs-to-majority-group' that used to succeed is now failing"
+   3 "Host master3: validation 'belongs-to-majority-group' that used to succeed is now failing"
+   3 "Host master1: validation 'belongs-to-majority-group' that used to succeed is now failing"
+   3 "Host localhost: validation 'connected' that used to succeed is now failing"
+   2 "Host worker-node2: validation 'has-inventory' that used to succeed is now failing"
+   2 "Host worker-node1: validation 'container-images-available' that used to succeed is now failing"
+   1 "Host worker-node3: validation 'has-inventory' that used to succeed is now failing"
+   1 "Host master3: validation 'has-inventory' that used to succeed is now failing"
+   1 "Host localhost: validation 'container-images-available' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+: status()
+: status()
+===============================================================================================================================
+===============================================================================================================================
+id: "b87e8ef0-7d6b-4f50-b850-cae65e4c6cf4"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host master2.my-cluster.ocp-hamid.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master3.my-cluster.ocp-hamid.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master1.my-cluster.ocp-hamid.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master2.my-cluster.ocp-hamid.com": status("installed")
+"master1.my-cluster.ocp-hamid.com": status("installed")
+"master3.my-cluster.ocp-hamid.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "ef9500fa-b957-40d7-b7af-36c4eef40c9e"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host c4d6a6d.online-server.cloud: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host cfcdeed.online-server.cloud: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host b4290f6.online-server.cloud: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host aa2c239.online-server.cloud: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host 5768645.online-server.cloud: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"5768645.online-server.cloud": status("installed")
+"b4290f6.online-server.cloud": status("installed")
+"aa2c239.online-server.cloud": status("installed")
+"c4d6a6d.online-server.cloud": status("installed")
+"cfcdeed.online-server.cloud": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "8c05b7b2-beab-49d8-b192-15dc784f66d2"
+status: "insufficient"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host new-host-8: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host new-host-8: validation 'connected' that used to succeed is now failing"
+13572 "Host new-host-6: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host new-host-6: validation 'connected' that used to succeed is now failing"
+13571 "Host new-host-4: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host new-host-4: validation 'connected' that used to succeed is now failing"
+13571 "Host new-host-10: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host new-host-10: validation 'connected' that used to succeed is now failing"
+13570 "Host new-host: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host new-host: validation 'connected' that used to succeed is now failing"
+13570 "Host new-host-12: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host new-host-12: validation 'connected' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"new-host": status("resetting-pending-user-action")
+"new-host-12": status("resetting-pending-user-action")
+"new-host-4": status("resetting-pending-user-action")
+"new-host-8": status("resetting-pending-user-action")
+"new-host-10": status("resetting-pending-user-action")
+"new-host-6": status("resetting-pending-user-action")
+"new-host-5": status("disconnected")
+"master2": status("disconnected")
+"master1": status("disconnected")
+===============================================================================================================================
+===============================================================================================================================
+id: "76ee31a8-53fd-4b22-8b4b-07b616acb443"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13571 "Host master1.cluster3.ocp-hamid.de: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host master3.cluster3.ocp-hamid.de: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host master2.cluster3.ocp-hamid.de: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master2.cluster3.ocp-hamid.de": status("installed")
+"master1.cluster3.ocp-hamid.de": status("installed")
+"master3.cluster3.ocp-hamid.de": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "01219db8-3af6-4be1-9643-9005e2a18b4a"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host worker3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host worker2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host worker1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host master3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host master1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master2": status("installed")
+"master3": status("installed")
+"worker1": status("installed")
+"worker3": status("installed")
+"worker2": status("installed")
+"master1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "041bd333-3a07-4cc1-8de7-a5569642303e"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host vmw-ipi-worker-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host vmw-ipi-worker-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host vmw-ipi-worker-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host vmw-ipi-master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host vmw-ipi-master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host vmw-ipi-master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"vmw-ipi-master-1": status("installed")
+"vmw-ipi-master-0": status("installed")
+"vmw-ipi-worker-2": status("installed")
+"vmw-ipi-master-2": status("installed")
+"vmw-ipi-worker-1": status("installed")
+"vmw-ipi-worker-0": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "44a648fe-62c9-42c5-b193-2119cbf1b1e8"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13575 "Host worker1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host master1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host worker0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host master0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master0": status("installed")
+"worker1": status("installed")
+"master1": status("installed")
+"worker0": status("installed")
+"master2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "1fc50532-a261-4025-b4b8-ac0e6ebdfd79"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13575 "Host master2.os4-prod.itfabrik.at: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host master1.os4-prod.itfabrik.at: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host master0.os4-prod.itfabrik.at: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host compute2.os4-prod.itfabrik.at: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host compute1.os4-prod.itfabrik.at: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master2.os4-prod.itfabrik.at": status("installed")
+"compute1.os4-prod.itfabrik.at": status("installed")
+"master1.os4-prod.itfabrik.at": status("installed")
+"compute2.os4-prod.itfabrik.at": status("installed")
+"master0.os4-prod.itfabrik.at": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "11c88131-1122-472b-879b-c5495ddbf552"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13575 "Host ocp-wrkr-02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host ocp-wrkr-01: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host ocp-cp-03: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host ocp-cp-02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host ocp-cp-01: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"ocp-cp-02": status("installed")
+"ocp-cp-03": status("installed")
+"ocp-wrkr-02": status("installed")
+"ocp-wrkr-01": status("installed")
+"ocp-cp-01": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "7d1ffc04-6cd5-4774-9638-da01ac398e24"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13574 "Host wdc04hciocpl04.migration.ibm.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host wdc04hciocpl03.migration.ibm.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host wdc04hciocpl02.migration.ibm.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"wdc04hciocpl02.migration.ibm.com": status("installed")
+"wdc04hciocpl04.migration.ibm.com": status("installed")
+"wdc04hciocpl03.migration.ibm.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "05195408-fcc7-47be-afa9-112f3bd97ad0"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host openshift-worker-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host openshift-worker-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host openshift-master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host openshift-master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host openshift-master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"openshift-master-2": status("installed")
+"openshift-worker-0": status("installed")
+"openshift-worker-1": status("installed")
+"openshift-master-0": status("installed")
+"openshift-master-1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "059a6147-6091-444e-a636-912e3c771f4b"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host kube3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host kube2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host kube1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"kube2": status("installed")
+"kube3": status("installed")
+"kube1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "fb430e1a-cea7-44ee-b560-50dd5b9d22e0"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host nodeb: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host nodea: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host nodec: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"nodeb": status("installed")
+"nodec": status("installed")
+"nodea": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "abd39fd1-4033-40fb-9f4a-e295fbdaf9c0"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host grunt1.lab.itblaked.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host shadowfix.lab.itblaked.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host grunt2.lab.itblaked.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"grunt1.lab.itblaked.com": status("installed")
+"grunt2.lab.itblaked.com": status("installed")
+"shadowfix.lab.itblaked.com": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "4be2fe30-d627-4bc7-8211-765e367668f7"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host worker-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host worker-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master-0": status("installed")
+"worker-1": status("installed")
+"worker-0": status("installed")
+"master-1": status("installed")
+"master-2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "4373c079-8a92-4e5e-bbf8-7b30d53895d6"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host baremetal-04: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host baremetal-02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host baremetal-05: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host baremetal-03: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host baremetal-01: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"baremetal-03": status("installed")
+"baremetal-05": status("installed")
+"baremetal-01": status("installed")
+"baremetal-02": status("installed")
+"baremetal-04": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "1daaf3bf-0adc-4cae-8c5e-461453f82a58"
+status: "finalizing"
+-------------------------------------------------------------------------------------------------------------------------------
+13575 "Host rhcos-pve0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host rhcos-len0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host rhcos-hpe0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"rhcos-len0": status("installed")
+"rhcos-pve0": status("installed")
+"rhcos-hpe0": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "b409b7a1-0805-435e-a973-b9abbb0cd49a"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host master1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host master3: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"worker2": status("installed")
+"master3": status("installed")
+"master1": status("installed")
+"worker1": status("installed")
+"master2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "9f27d1bc-e79e-4bd1-a716-eb762e597c8f"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master-2": status("installed")
+"master-1": status("installed")
+"master-0": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "00cf545c-843f-426f-97a1-adfa08a0876a"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host seliicvh00745.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host seliicvh00744.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host seliicvh00743.exilis.seli.gic.ericsson.se: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"seliicvh00745.exilis.seli.gic.ericsson.se": status("installed")
+"seliicvh00744.exilis.seli.gic.ericsson.se": status("installed")
+"41a316d5-77fe-c9bc-fb84-3dab7efcce80": status("disabled")
+"seliicvh00743.exilis.seli.gic.ericsson.se": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "e243fed5-f547-4a0a-a27d-c7a2b095792a"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host spud10: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host spud5: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host spud11: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host spud7: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host spud12: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"spud7": status("installed")
+"spud12": status("installed")
+"spud10": status("installed")
+"spud5": status("installed")
+"spud6": status("error")
+"spud11": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "97fea488-1236-446b-bceb-1327063cd366"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host worker-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host worker-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master-1": status("installed")
+"worker-0": status("installed")
+"master-2": status("installed")
+"master-0": status("installed")
+"worker-1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "94beef4a-e571-4bef-9e3c-4d35b865e216"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13575 "Host master-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host worker-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host worker-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host master-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host master-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host worker-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"worker-2": status("installed")
+"master-2": status("installed")
+"master-1": status("installed")
+"worker-0": status("installed")
+"master-0": status("installed")
+"worker-1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "4495cf50-79c8-444e-a6ad-383e7811c973"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13575 "Host master3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host master2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host worker2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host worker1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13574 "Host master1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master2": status("installed")
+"worker1": status("installed")
+"worker2": status("installed")
+"master3": status("installed")
+"master1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "1ccfe27c-468a-4952-9fb1-e4c380047e4b"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13575 "Host control-plane-3.lab.mycluster.demo: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host control-plane-2.lab.mycluster.demo: validation 'has-min-valid-disks' that used to succeed is now failing"
+13575 "Host control-plane-1.lab.mycluster.demo: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"control-plane-1.lab.mycluster.demo": status("installed")
+"control-plane-3.lab.mycluster.demo": status("installed")
+"control-plane-2.lab.mycluster.demo": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "bf24b31e-2da8-4f3c-952c-d179140ceb01"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host oc1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host oc2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host oc3: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"oc1": status("installed")
+"oc3": status("installed")
+"oc2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "dfeb248c-eafe-4998-bf59-03efbfe50c8c"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13571 "Host etcd-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host etcd-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host etcd-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"etcd-2": status("installed")
+"etcd-0": status("installed")
+"etcd-1": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "c561c568-0807-41d2-b95d-2f1b292b7a3b"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13571 "Host t-cluster01-worker02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host t-cluster01-master01: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host t-cluster01-master02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13569 "Host t-cluster01-master03: validation 'has-min-valid-disks' that used to succeed is now failing"
+13568 "Host t-cluster01-worker01: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"t-cluster01-master02": status("installed")
+"t-cluster01-master01": status("installed")
+"t-cluster01-master03": status("installed")
+"t-cluster01-worker01": status("installed")
+"t-cluster01-worker02": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "d3a3b3a2-ac31-41a2-a0b7-1c1cdbc1d912"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13571 "Host oc-control-03: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host oc-control-02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host oc-control-01: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"oc-control-01": status("installed")
+"oc-control-02": status("installed")
+"oc-control-03": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "b708c509-6d9a-4f68-8455-bfb3fb768101"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host master-0-2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker-0-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host worker-0-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-0-1: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host master-0-0: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"worker-0-1": status("installed")
+"master-0-2": status("installed")
+"master-0-1": status("installed")
+"master-0-0": status("installed")
+"worker-0-0": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "bf5f3798-b6a3-4572-b5d1-530307c415c6"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13571 "Host lp999opc0106f.admin.group.sia: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host lp999opc0104f.admin.group.sia: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host lp999opc0103f.admin.group.sia: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host lp999opc0102f.admin.group.sia: validation 'has-min-valid-disks' that used to succeed is now failing"
+13571 "Host lp999opc0101f.admin.group.sia: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host lp999opc0105f.admin.group.sia: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"lp999opc0104f.admin.group.sia": status("installed")
+"lp999opc0105f.admin.group.sia": status("installed")
+"lp999opc0101f.admin.group.sia": status("installed")
+"lp999opc0102f.admin.group.sia": status("installed")
+"lp999opc0106f.admin.group.sia": status("installed")
+"lp999opc0103f.admin.group.sia": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "52900bc9-0374-4e8f-90e5-ce20402455af"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host blade4.redhat.local: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host blade3.redhat.local: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host blade2.redhat.local: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host blade1.redhat.local: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host blade5.redhat.local: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"blade3.redhat.local": status("installed")
+"blade4.redhat.local": status("installed")
+"blade1.redhat.local": status("installed")
+"blade5.redhat.local": status("installed")
+"blade2.redhat.local": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "061b133b-72b7-486a-adc8-5ea3aeec6e6f"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13576 "Host w3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host w2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host cp3: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host cp2: validation 'has-min-valid-disks' that used to succeed is now failing"
+13576 "Host cp1: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"w1": status("error")
+"cp1": status("installed")
+"cp2": status("installed")
+"w3": status("installed")
+"cp3": status("installed")
+"w2": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "cb428c66-40fa-496e-9f86-7d5eb8634556"
+status: "insufficient"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host rhnmaster2.tipesoft.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13573 "Host rhnmaster2.tipesoft.com: validation 'connected' that used to succeed is now failing"
+13572 "Host rhnworker2.tipesoft.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host rhnworker2.tipesoft.com: validation 'connected' that used to succeed is now failing"
+13572 "Host rhnworker1.tipesoft.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host rhnworker1.tipesoft.com: validation 'connected' that used to succeed is now failing"
+13572 "Host rhnmaster3.tipesoft.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host rhnmaster3.tipesoft.com: validation 'connected' that used to succeed is now failing"
+13572 "Host rhnmaster1.tipesoft.com: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host rhnmaster1.tipesoft.com: validation 'connected' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"rhnworker1.tipesoft.com": status("resetting-pending-user-action")
+"rhnmaster1.tipesoft.com": status("resetting-pending-user-action")
+"rhnmaster3.tipesoft.com": status("resetting-pending-user-action")
+"rhnmaster2.tipesoft.com": status("resetting-pending-user-action")
+"rhnworker2.tipesoft.com": status("resetting-pending-user-action")
+===============================================================================================================================
+===============================================================================================================================
+id: "9d0adf69-e3a0-4464-8d44-8bbeaa283ae0"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13572 "Host bm03.ocpcnv.ovirt.org: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host bm02.ocpcnv.ovirt.org: validation 'has-min-valid-disks' that used to succeed is now failing"
+13572 "Host bm01.ocpcnv.ovirt.org: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"bm01.ocpcnv.ovirt.org": status("installed")
+"bm02.ocpcnv.ovirt.org": status("installed")
+"bm03.ocpcnv.ovirt.org": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "d71a551f-0cc5-42f6-8290-1fab94f4e590"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+13575 "Host ocn02: validation 'has-min-valid-disks' that used to succeed is now failing"
+13570 "Host ocn03: validation 'has-min-valid-disks' that used to succeed is now failing"
+13569 "Host ocn01: validation 'has-min-valid-disks' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"ocn01": status("installed")
+"ocn03": status("installed")
+"ocn02": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "18680df3-2723-47de-aad3-6fcb53188401"
+status: "insufficient"
+-------------------------------------------------------------------------------------------------------------------------------
+7930 "Host zombiecp3: validation 'belongs-to-majority-group' that used to succeed is now failing"
+   2 "Host zombiecp2: validation 'ntp-synced' that used to succeed is now failing"
+   2 "Host zombiecp1: validation 'connected' that used to succeed is now failing"
+   2 "Host zombiecp1: validation 'belongs-to-majority-group' that used to succeed is now failing"
+   1 "Host zombiew2: validation 'ntp-synced' that used to succeed is now failing"
+   1 "Host zombiew2: validation 'has-inventory' that used to succeed is now failing"
+   1 "Host zombiew2: validation 'connected' that used to succeed is now failing"
+   1 "Host zombiew1: validation 'ntp-synced' that used to succeed is now failing"
+   1 "Host zombiew1: validation 'connected' that used to succeed is now failing"
+   1 "Host zombiecp2: validation 'connected' that used to succeed is now failing"
+   1 "Host zombiecp1: validation 'ntp-synced' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"zombiecp3": status("resetting-pending-user-action")
+"zombiew1": status("disconnected")
+"zombiecp2": status("disconnected")
+"zombiew2": status("disconnected")
+"zombiecp1": status("disconnected")
+===============================================================================================================================
+===============================================================================================================================
+id: "6ea11f49-1313-4af1-910d-8ce84330c678"
+status: "installed"
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+"worker-1": status("installed")
+"worker-0": status("installed")
+"master-1": status("installed")
+"master-2": status("installed")
+"master-0": status("installed")
+===============================================================================================================================
+===============================================================================================================================
+id: "55616a6f-de5b-4228-92a8-ab1a30895063"
+status: "installing-pending-user-action"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host master-1.ocp468.lab.local: validation 'connected' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"master-2.ocp468.lab.local": status("installing-pending-user-action")
+"master-3.ocp461.lab.local": status("installing-pending-user-action")
+"master-1.ocp468.lab.local": status("installing-in-progress")
+===============================================================================================================================
+===============================================================================================================================
+id: "4d1cb6b3-8b6f-45dc-8bab-ce257d3d00f9"
+status: "insufficient"
+-------------------------------------------------------------------------------------------------------------------------------
+13573 "Host w1: validation 'belongs-to-majority-group' that used to succeed is now failing"
+-------------------------------------------------------------------------------------------------------------------------------
+"m2": status("disconnected")
+"w3": status("resetting-pending-user-action")
+"m3": status("disconnected")
+"m1": status("disconnected")
+"w2": status("resetting-pending-user-action")
+"w1": status("resetting-pending-user-action")
+===============================================================================================================================
