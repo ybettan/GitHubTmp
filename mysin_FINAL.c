@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-#define ACCURACY 0.000001 // Very good!!
+#define ACCURACY 0.000001 /* Very good!! */
 
 
 double my_sin (double x)
@@ -11,8 +11,10 @@ double my_sin (double x)
 	while (fabs(term) > ACCURACY)
 	{
 		term = numerator/denumerator;
+        /* FIXME: get used to sum += sign*term */
 		sum = sum + sign*term;
 		numerator = numerator * x * x;
+        /* FIXME: get used to denumerator *= a*b */
 		denumerator = denumerator * a * b;
 		sign*=-1;
 		a+=2;
@@ -31,7 +33,7 @@ int main()
 	my_sin(x));
 	printf("The answer with the standard library is: sin(%f) = %f\n" , x, sin(x));
 	
-    //FIXME: fix the indention - the compiler gives a warning about it.
+    /*FIXME: fix the indention. */
  return 0;
 }
 
