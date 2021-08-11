@@ -10,9 +10,9 @@ import (
 const templateData = `apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
 metadata:
-  name: {{.NAME}}
+  name: {{ .ROLE }}-{{ .MODE }}
   labels:
-    machineconfiguration.openshift.io/role: {{.ROLE}}
+    machineconfiguration.openshift.io/role: {{ .ROLE }}
 spec:
   config:
     ignition:
@@ -20,19 +20,24 @@ spec:
     storage:
       luks:
         - name: root
-          f13-h26-b02-5039ms.rdu2.scalelab.redhat.coddevice: /dev/disk/by-partlabel/root
-          clevis:{{ if .ENCRYPTION_MODE_TPMV2 }}
-            tpm2: true{{ end }}{{ if .ENCRYPTION_MODE_TANG }}
-            tang: {{.TANG_INFO}}{{ end }}
+          device: /dev/disk/by-partlabel/root
+          clevis:
+		  {{- if eq .MODE "tpm" }}
+            tpm2: true
+		  {{- else if eq .MODE "tang" }}
+            tang: {{ .TANG_INFO }}
+		  {{- end }}
           options: [--cipher, aes-cbc-essiv:sha256]
           wipeVolume: true
       filesystems:
         - device: /dev/mapper/root
           format: xfs
           wipeFilesystem: true
-          label: root{{ if .ENCRYPTION_MODE_TANG }}
+          label: root
+{{- if eq .MODE "tang" }}
   kernelArguments:
-    - rd.neednet=1{{ end }}
+    - rd.neednet=1
+{{- end }}
 `
 
 type TangInfo struct {
@@ -71,11 +76,11 @@ func main() {
 	}
 
 	p := map[string]string{
-		"NAME":                 "99-openshift-master-tpmv2-encryption.yaml",
-		"ROLE":                 "master",
-		"ENCRYPTION_MODE_TANG": "nonEmpty",
-		"TANG_INFO":            tangInfo,
+		"ROLE":      "master",
+		"MODE":      "tang",
+		"TANG_INFO": tangInfo,
 	}
+	p["NAME"] = p["ROLE"] + "-" + p["MODE"]
 
 	tmpl, err := template.New("template").Parse(templateData)
 	if err != nil {
