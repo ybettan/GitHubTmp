@@ -1,0 +1,1303 @@
+I1005 11:37:23.789881       1 request.go:668] Waited for 1.010128565s due to client-side throttling, not priority and fairness, request: GET:https://172.30.0.1:443/apis/security.openshift.io/v1?timeout=32s
+2021-10-05T11:37:25.761Z        INFO    controller-runtime.metrics      metrics server is starting to listen    {"addr": "127.0.0.1:8080"}
+2021-10-05T11:37:25.784Z        INFO    setup   starting manager
+I1005 11:37:25.785362       1 leaderelection.go:243] attempting to acquire leader lease openshift-special-resource-operator/b6ae617b.openshift.io...
+2021-10-05T11:37:25.785Z        INFO    controller-runtime.manager      starting metrics server {"path": "/metrics"}
+I1005 11:37:43.963575       1 leaderelection.go:253] successfully acquired lease openshift-special-resource-operator/b6ae617b.openshift.io
+2021-10-05T11:37:43.963Z        DEBUG   controller-runtime.manager.events       Normal  {"object": {"kind":"ConfigMap","namespace":"openshift-special-resource-operator","name":"b6ae617b.openshift.io","uid":"eab77a45-daf6-42e2-a33d-df8fb8a0ad64","apiVersion":"v1","resourceVersion":"623622"}, "reason": "LeaderElection", "message": "special-resource-controller-manager-59695c877c-cmnzk_39217bf5-d7e3-4e2f-9f9b-94c56563f5b5 became leader"}
+2021-10-05T11:37:43.963Z        DEBUG   controller-runtime.manager.events       Normal  {"object": {"kind":"Lease","namespace":"openshift-special-resource-operator","name":"b6ae617b.openshift.io","uid":"2d44aa4c-2766-4645-a5cf-308e3a5ed274","apiVersion":"coordination.k8s.io/v1","resourceVersion":"623623"}, "reason": "LeaderElection", "message": "special-resource-controller-manager-59695c877c-cmnzk_39217bf5-d7e3-4e2f-9f9b-94c56563f5b5 became leader"}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.964Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.968Z        INFO    controller-runtime.manager.controller.specialresource   Starting EventSource    {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "source": "kind source: /, Kind="}
+2021-10-05T11:37:43.968Z        INFO    controller-runtime.manager.controller.specialresource   Starting Controller     {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource"}
+2021-10-05T11:37:44.114Z        INFO    filter          CREATE IsSpecialResource (sroGVK)       {"Name": "simple-kmod", "Type": "*v1beta1.SpecialResource"}
+2021-10-05T11:37:44.114Z        INFO    filter          CREATE IsSpecialResource (sroGVK)       {"Name": "special-resource-preamble", "Type": "*v1beta1.SpecialResource"}
+2021-10-05T11:37:44.127Z        INFO    filter          CREATE Owned (sroGVK)   {"Name": "simple-kmod-driver-build-876ff3522a455de7", "Type": "*v1.BuildConfig"}
+2021-10-05T11:37:44.127Z        INFO    filter          CREATE Owned (sroGVK)   {"Name": "simple-kmod-driver-build-876ff3522a455de7", "Type": "*v1.BuildConfig"}
+2021-10-05T11:37:46.525Z        INFO    controller-runtime.manager.controller.specialresource   Starting workers        {"reconciler group": "sro.openshift.io", "reconciler kind": "SpecialResource", "worker count": 1}
+2021-10-05T11:37:46.526Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:37:46.541Z        INFO    filter          CREATE Owned (sroGVK)   {"Name": "simple-kmod-driver-container", "Type": "*v1.ImageStream"}
+2021-10-05T11:37:46.541Z        INFO    filter          CREATE Owned (sroGVK)   {"Name": "simple-kmod-driver-container", "Type": "*v1.ImageStream"}
+2021-10-05T11:37:46.619Z        INFO    cache   Nodes cached    {"name": "test-infra-cluster-42c2e830-master-0"}
+2021-10-05T11:37:46.619Z        INFO    cache   Nodes cached    {"name": "test-infra-cluster-42c2e830-master-1"}
+2021-10-05T11:37:46.619Z        INFO    cache   Nodes cached    {"name": "test-infra-cluster-42c2e830-master-2"}
+2021-10-05T11:37:46.619Z        INFO    cache   Node list:      {"length": 3}
+2021-10-05T11:37:46.619Z        INFO    cache   Nodes   {"num": 3}
+2021-10-05T11:37:46.669Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+E1005 11:37:53.333964       1 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+        For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+2021-10-05T11:38:09.773Z        INFO    warning         OnError: Cannot extract manifest: Get "https://quay.io/v2/": dial tcp: lookup quay.io on 172.30.0.10:53: server misbehaving
+2021-10-05T11:38:09.773Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:38:13.864Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:38:13.864Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:38:13.864Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:38:13.864Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:38:13.974Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:38:13.982Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:38:13.982Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:38:13.989Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:38:13.989Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:38:13.992Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:38:13.993Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:38:13.993Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:38:14.006Z        INFO    cache   Nodes cached    {"name": "test-infra-cluster-42c2e830-master-0"}
+2021-10-05T11:38:14.006Z        INFO    cache   Nodes cached    {"name": "test-infra-cluster-42c2e830-master-1"}
+2021-10-05T11:38:14.006Z        INFO    cache   Nodes cached    {"name": "test-infra-cluster-42c2e830-master-2"}
+2021-10-05T11:38:14.006Z        INFO    cache   Node list:      {"length": 3}
+2021-10-05T11:38:14.006Z        INFO    cache   Nodes   {"num": 3}
+2021-10-05T11:38:14.027Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:38:16.120Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:38:16.121Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:38:16.121Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:38:18.122Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:38:18.148Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:38:18.148Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": ""}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:38:18.213Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:38:18.226Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:38:18.226Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:38:18.226Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:38:23.316Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:38:23.316Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:38:23.379Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:38:23.379Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:38:23.379Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:38:23.379Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:38:24.449Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:38:24.449Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:38:24.452Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:38:24.452Z        INFO    helmer          Release manifests
+2021-10-05T11:38:24.457Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:38:24.473Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:38:24.473Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:38:24.473Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:38:24.473Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:38:24.473Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:38:24.473Z        INFO    resource        vendor != updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": ""}
+2021-10-05T11:38:24.473Z        INFO    resource        Skipping building driver-container      {"Name": "simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:38:24.473Z        INFO    helmer          Release post-install hooks
+2021-10-05T11:38:24.480Z        INFO    helmer          Hooks   {"post-install": "NotReady (IsNotFound)"}
+2021-10-05T11:38:24.485Z        INFO    helmer          Hooks   {"post-install": "Ready (Created)"}
+2021-10-05T11:38:24.523Z        INFO    cache   Nodes cached    {"name": "test-infra-cluster-42c2e830-master-0"}
+2021-10-05T11:38:24.523Z        INFO    cache   Nodes cached    {"name": "test-infra-cluster-42c2e830-master-1"}
+2021-10-05T11:38:24.523Z        INFO    cache   Nodes cached    {"name": "test-infra-cluster-42c2e830-master-2"}
+2021-10-05T11:38:24.524Z        INFO    cache   Node list:      {"length": 3}
+2021-10-05T11:38:24.524Z        INFO    cache   Nodes   {"num": 3}
+2021-10-05T11:38:24.534Z        INFO    simple-kmod     NODE    {"Setting Label ": "specialresource.openshift.io/state-simple-kmod-0000", "on ": "test-infra-cluster-42c2e830-master-0"}
+2021-10-05T11:38:24.543Z        INFO    simple-kmod     NODE    {"Setting Label ": "specialresource.openshift.io/state-simple-kmod-0000", "on ": "test-infra-cluster-42c2e830-master-1"}
+2021-10-05T11:38:24.557Z        INFO    simple-kmod     NODE    {"Setting Label ": "specialresource.openshift.io/state-simple-kmod-0000", "on ": "test-infra-cluster-42c2e830-master-2"}
+2021-10-05T11:38:24.557Z        INFO    simple-kmod     Executing       {"State": "templates/1000-driver-container.yaml"}
+2021-10-05T11:38:24.557Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:38:25.554Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:38:25.554Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:38:25.573Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:38:25.573Z        INFO    helmer          Release manifests
+2021-10-05T11:38:25.586Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:38:25.592Z        INFO    resource        Not found, creating     {"Kind": "ServiceAccount: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:38:25.592Z        INFO    resource        Release {"Kind": "ServiceAccount: simple-kmod/simple-kmod-driver-container", "Installed": true}
+2021-10-05T11:38:25.592Z        INFO    resource        Is      {"Kind": "ServiceAccount: simple-kmod/simple-kmod-driver-container", "OneTimer": false}
+2021-10-05T11:38:25.661Z        INFO    filter          CREATE Owned (sroGVK)   {"Name": "simple-kmod-driver-container", "Type": "*v1.ServiceAccount"}
+2021-10-05T11:38:25.661Z        INFO    filter          CREATE Owned (sroGVK)   {"Name": "simple-kmod-driver-container", "Type": "*v1.ServiceAccount"}
+2021-10-05T11:38:25.661Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:38:25.683Z        INFO    resource        Not found, creating     {"Kind": "Role: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:38:25.684Z        INFO    resource        Release {"Kind": "Role: simple-kmod/simple-kmod-driver-container", "Installed": true}
+2021-10-05T11:38:25.684Z        INFO    resource        Is      {"Kind": "Role: simple-kmod/simple-kmod-driver-container", "OneTimer": false}
+2021-10-05T11:38:25.945Z        INFO    filter          CREATE Owned (sroGVK)   {"Name": "simple-kmod-driver-container", "Type": "*v1.Role"}
+2021-10-05T11:38:25.945Z        INFO    filter          CREATE Owned (sroGVK)   {"Name": "simple-kmod-driver-container", "Type": "*v1.Role"}
+2021-10-05T11:38:25.946Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:38:25.965Z        INFO    resource        Not found, creating     {"Kind": "RoleBinding: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:38:25.965Z        INFO    resource        Release {"Kind": "RoleBinding: simple-kmod/simple-kmod-driver-container", "Installed": true}
+2021-10-05T11:38:25.965Z        INFO    resource        Is      {"Kind": "RoleBinding: simple-kmod/simple-kmod-driver-container", "OneTimer": false}
+2021-10-05T11:38:26.189Z        INFO    filter          CREATE Owned (sroGVK)   {"Name": "simple-kmod-driver-container", "Type": "*v1.RoleBinding"}
+2021-10-05T11:38:26.189Z        INFO    filter          CREATE Owned (sroGVK)   {"Name": "simple-kmod-driver-container", "Type": "*v1.RoleBinding"}
+2021-10-05T11:38:26.191Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:38:26.191Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-container"}
+2021-10-05T11:38:26.203Z        INFO    resource        Not found, creating     {"Kind": "DaemonSet: simple-kmod/simple-kmod-driver-container-876ff3522a455de7"}
+2021-10-05T11:38:26.203Z        INFO    resource        Release {"Kind": "DaemonSet: simple-kmod/simple-kmod-driver-container-876ff3522a455de7", "Installed": true}
+2021-10-05T11:38:26.203Z        INFO    resource        Is      {"Kind": "DaemonSet: simple-kmod/simple-kmod-driver-container-876ff3522a455de7", "OneTimer": false}
+2021-10-05T11:38:26.230Z        INFO    filter          CREATE Owned (sroGVK)   {"Name": "simple-kmod-driver-container-876ff3522a455de7", "Type": "*v1.DaemonSet"}
+2021-10-05T11:38:26.230Z        INFO    filter          CREATE Owned (sroGVK)   {"Name": "simple-kmod-driver-container-876ff3522a455de7", "Type": "*v1.DaemonSet"}
+2021-10-05T11:38:26.231Z        INFO    resource        specialresource.openshift.io/state
+2021-10-05T11:38:26.293Z        INFO    filter          CREATE Owned (label)    {"Name": "simple-kmod-driver-container-876ff3522a455de7-6pfbp", "Type": "*v1.Pod"}
+2021-10-05T11:38:26.293Z        INFO    filter          CREATE Owned (label)    {"Name": "simple-kmod-driver-container-876ff3522a455de7-6pfbp", "Type": "*v1.Pod"}
+2021-10-05T11:38:26.359Z        INFO    filter          CREATE Owned (label)    {"Name": "simple-kmod-driver-container-876ff3522a455de7-x7pqb", "Type": "*v1.Pod"}
+2021-10-05T11:38:26.359Z        INFO    filter          CREATE Owned (label)    {"Name": "simple-kmod-driver-container-876ff3522a455de7-x7pqb", "Type": "*v1.Pod"}
+2021-10-05T11:38:26.490Z        INFO    filter          CREATE Owned (label)    {"Name": "simple-kmod-driver-container-876ff3522a455de7-wzgj8", "Type": "*v1.Pod"}
+2021-10-05T11:38:26.490Z        INFO    filter          CREATE Owned (label)    {"Name": "simple-kmod-driver-container-876ff3522a455de7-wzgj8", "Type": "*v1.Pod"}
+2021-10-05T11:38:36.244Z        INFO    wait    Waiting for lifecycle update of         {"Namespace": "simple-kmod", "Name": "simple-kmod-driver-container-876ff3522a455de7"}
+2021-10-05T11:38:36.435Z        INFO    wait    Checking lifecycle of   {"Pod": "simple-kmod-driver-container-876ff3522a455de7-6pfbp"}
+2021-10-05T11:38:36.470Z        INFO    wait    Checking lifecycle of   {"Pod": "simple-kmod-driver-container-876ff3522a455de7-wzgj8"}
+2021-10-05T11:38:36.507Z        INFO    wait    Checking lifecycle of   {"Pod": "simple-kmod-driver-container-876ff3522a455de7-x7pqb"}
+2021-10-05T11:38:36.521Z        INFO    wait    All Pods running latest DaemonSet Template, we can move on
+2021-10-05T11:38:41.535Z        INFO    wait    Waiting for availability of     {"Kind": "DaemonSet: simple-kmod/simple-kmod-driver-container-876ff3522a455de7"}
+2021-10-05T11:38:46.530Z        INFO    wait    Waiting for availability of     {"Kind": "DaemonSet: simple-kmod/simple-kmod-driver-container-876ff3522a455de7"}
+2021-10-05T11:38:51.530Z        INFO    wait    Waiting for availability of     {"Kind": "DaemonSet: simple-kmod/simple-kmod-driver-container-876ff3522a455de7"}
+2021-10-05T11:38:56.530Z        INFO    wait    Waiting for availability of     {"Kind": "DaemonSet: simple-kmod/simple-kmod-driver-container-876ff3522a455de7"}
+2021-10-05T11:39:01.716Z        INFO    wait    Waiting for availability of     {"Kind": "DaemonSet: simple-kmod/simple-kmod-driver-container-876ff3522a455de7"}
+2021-10-05T11:39:06.746Z        INFO    wait    Waiting for availability of     {"Kind": "DaemonSet: simple-kmod/simple-kmod-driver-container-876ff3522a455de7"}
+2021-10-05T11:39:06.993Z        INFO    wait    Waiting for availability of     {"Kind": "DaemonSet: simple-kmod/simple-kmod-driver-container-876ff3522a455de7"}
+2021-10-05T11:39:06.993Z        INFO    resource        checkForImagePullBackOff get PodList from: simple-kmod
+2021-10-05T11:39:07.155Z        INFO    resource        checkForImagePullBackOff        {"PodName": "simple-kmod-driver-container-876ff3522a455de7-6pfbp"}
+2021-10-05T11:39:07.155Z        INFO    resource        Reason  {"reason": "ErrImagePull"}
+2021-10-05T11:39:07.326Z        INFO    warning         OnError: After CRUD hooks failed: Cannot check for ImagePullBackOff: ImagePullBackOff need to rebuild simple-kmod driver-container
+2021-10-05T11:39:07.455Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/1000-driver-container.yaml: After CRUD hooks failed: Cannot check for ImagePullBackOff: ImagePullBackOff need to rebuild simple-kmod driver-container"}
+2021-10-05T11:39:07.455Z        INFO    preamble        Controller Request      {"Name": "special-resource-preamble", "Namespace": ""}
+2021-10-05T11:39:07.507Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:39:10.599Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:39:10.599Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:39:10.599Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:39:10.599Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:39:10.613Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:39:10.717Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:39:10.717Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:39:10.886Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:39:10.886Z        INFO    special-resource-preamble       Preamble done, waiting for specialresource requests
+2021-10-05T11:39:10.898Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:39:11.073Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:39:11.073Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:39:11.153Z        INFO    status          RECONCILE SUCCESS: Reconcile
+2021-10-05T11:39:11.153Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:39:11.313Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:39:13.816Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:39:13.816Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:39:13.816Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:39:13.816Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:39:13.818Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:39:13.828Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:39:13.828Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:39:13.847Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:39:13.847Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:39:13.848Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:39:13.849Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:39:13.849Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:39:13.870Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:39:16.156Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:39:16.156Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:39:16.156Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:39:18.156Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:39:18.188Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:39:18.188Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:39:18.232Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:39:18.273Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:39:18.273Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:39:18.273Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:39:23.312Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:39:23.312Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:39:23.317Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:39:23.317Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:39:23.317Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:39:23.317Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:39:24.213Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:39:24.213Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:39:24.216Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:39:24.216Z        INFO    helmer          Release manifests
+2021-10-05T11:39:24.222Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:39:24.245Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:39:24.245Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:39:24.245Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:39:24.245Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:39:24.245Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:39:24.245Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:39:24.254Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:39:24.254Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:39:24.254Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:39:34.698Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:39:39.494Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:39:44.509Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:39:49.437Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:39:54.437Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:39:59.549Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:39:59.648Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:39:59.691Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:39:59.724Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:39:59.742Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:39:59.823Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:40:02.422Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:40:02.422Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:40:02.422Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:40:02.422Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:40:02.426Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:40:02.514Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:40:02.514Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:40:02.607Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:40:02.607Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:40:02.608Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:40:02.609Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:40:02.609Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:40:02.831Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:40:05.769Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:40:05.769Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:40:05.769Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:40:07.776Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:40:07.832Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:40:07.832Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:40:07.919Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:40:07.928Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:40:07.928Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:40:07.928Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:40:12.952Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:40:12.952Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:40:12.980Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:40:12.980Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:40:12.980Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:40:12.980Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:40:13.892Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:40:13.892Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:40:13.907Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:40:13.907Z        INFO    helmer          Release manifests
+2021-10-05T11:40:13.919Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:40:13.945Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:40:13.945Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:40:13.945Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:40:13.945Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:40:13.945Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:40:13.945Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:40:13.972Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:40:13.972Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:40:13.972Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:40:24.028Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:40:29.037Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:40:34.097Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:40:39.135Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:40:44.024Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:40:49.015Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:40:49.024Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:40:49.031Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:40:49.041Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:40:49.061Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:40:49.079Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:40:51.404Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:40:51.404Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:40:51.404Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:40:51.404Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:40:51.408Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:40:51.448Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:40:51.448Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:40:51.494Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:40:51.494Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:40:51.495Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:40:51.496Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:40:51.496Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:40:51.534Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:40:54.082Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:40:54.082Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:40:54.082Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:40:56.083Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:40:56.134Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:40:56.134Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:40:56.179Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:40:56.190Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:40:56.190Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:40:56.190Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:41:01.197Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:41:01.197Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:41:01.206Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:41:01.206Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:41:01.206Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:41:01.206Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:41:03.048Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:41:03.048Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:41:03.136Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:41:03.136Z        INFO    helmer          Release manifests
+2021-10-05T11:41:03.229Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:41:03.531Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:41:03.532Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:41:03.532Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:41:03.532Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:41:03.532Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:41:03.532Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:41:03.706Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:41:03.706Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:41:03.706Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:41:13.882Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:41:18.899Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:41:23.881Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:41:29.164Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:41:34.025Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:41:38.935Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:41:38.961Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:41:39.022Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:41:39.070Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:41:39.112Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:41:39.178Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:41:41.933Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:41:41.933Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:41:41.933Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:41:41.933Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:41:41.935Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:41:41.949Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:41:41.949Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:41:41.961Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:41:41.961Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:41:41.962Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:41:41.966Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:41:41.966Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:41:41.999Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:41:44.110Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:41:44.110Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:41:44.110Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:41:46.114Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:41:46.247Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:41:46.247Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:41:46.289Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:41:46.314Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:41:46.314Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:41:46.314Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:41:51.319Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:41:51.319Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:41:51.322Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:41:51.323Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:41:51.323Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:41:51.323Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:41:52.236Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:41:52.236Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:41:52.262Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:41:52.262Z        INFO    helmer          Release manifests
+2021-10-05T11:41:52.278Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:41:52.319Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:41:52.319Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:41:52.319Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:41:52.319Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:41:52.319Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:41:52.319Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:41:52.336Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:41:52.336Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:41:52.336Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:42:02.551Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:42:07.405Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:42:12.398Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:42:17.377Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:42:22.383Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:42:27.375Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:42:27.384Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:42:27.406Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:42:27.419Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:42:27.499Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:42:27.519Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:42:29.736Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:42:29.736Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:42:29.736Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:42:29.736Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:42:29.740Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:42:29.755Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:42:29.755Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:42:29.768Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:42:29.768Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:42:29.769Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:42:29.771Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:42:29.771Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:42:29.848Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:42:32.454Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:42:32.454Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:42:32.454Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:42:34.454Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:42:34.625Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:42:34.625Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:42:34.819Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:42:34.937Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:42:34.937Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:42:34.937Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:42:39.978Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:42:39.978Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:42:39.992Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:42:39.992Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:42:39.992Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:42:39.992Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:42:41.102Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:42:41.103Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:42:41.113Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:42:41.113Z        INFO    helmer          Release manifests
+2021-10-05T11:42:41.118Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:42:41.146Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:42:41.146Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:42:41.146Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:42:41.146Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:42:41.146Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:42:41.146Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:42:41.155Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:42:41.155Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:42:41.155Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:42:51.378Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:42:56.391Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:43:01.553Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:43:06.448Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:43:11.385Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:43:16.375Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:43:16.382Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:43:16.393Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:43:16.401Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:43:16.562Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:43:16.592Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:43:18.755Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:43:18.755Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:43:18.755Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:43:18.755Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:43:18.759Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:43:18.764Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:43:18.764Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:43:18.786Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:43:18.787Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:43:18.787Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:43:18.788Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:43:18.788Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:43:18.805Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:43:20.949Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:43:20.949Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:43:20.949Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:43:22.953Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:43:22.993Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:43:22.993Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:43:23.014Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:43:23.024Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:43:23.024Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:43:23.024Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:43:28.038Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:43:28.038Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:43:28.050Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:43:28.050Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:43:28.050Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:43:28.050Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:43:29.119Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:43:29.119Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:43:29.145Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:43:29.146Z        INFO    helmer          Release manifests
+2021-10-05T11:43:29.161Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:43:29.250Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:43:29.250Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:43:29.250Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:43:29.250Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:43:29.250Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:43:29.250Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:43:29.298Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:43:29.298Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:43:29.298Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:43:39.479Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:43:44.445Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:43:49.447Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:43:54.445Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:43:59.452Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:44:04.561Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:44:04.732Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:44:05.014Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:44:05.445Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:44:05.766Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:44:05.924Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:44:09.380Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:44:09.380Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:44:09.380Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:44:09.380Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:44:09.382Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:44:09.468Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:44:09.468Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:44:09.634Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:44:09.634Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:44:09.635Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:44:09.637Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:44:09.637Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:44:09.801Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:44:12.287Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:44:12.287Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:44:12.287Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:44:14.288Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:44:14.312Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:44:14.312Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:44:14.329Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:44:14.336Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:44:14.336Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:44:14.336Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:44:19.370Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:44:19.370Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:44:19.417Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:44:19.417Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:44:19.417Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:44:19.417Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:44:20.589Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:44:20.589Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:44:20.606Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:44:20.606Z        INFO    helmer          Release manifests
+2021-10-05T11:44:20.653Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:44:20.684Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:44:20.685Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:44:20.685Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:44:20.685Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:44:20.685Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:44:20.685Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:44:20.703Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:44:20.703Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:44:20.703Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:44:30.796Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:44:35.896Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:44:40.773Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:44:46.027Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:44:50.783Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:44:55.794Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:44:55.834Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:44:55.907Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:44:55.926Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:44:56.567Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:44:56.580Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:44:58.751Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:44:58.751Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:44:58.751Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:44:58.751Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:44:58.756Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:44:58.798Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:44:58.798Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:44:58.829Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:44:58.829Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:44:58.830Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:44:58.832Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:44:58.832Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:44:58.924Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:45:01.466Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:45:01.466Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:45:01.466Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:45:03.467Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:45:03.678Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:45:03.678Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:45:03.946Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:45:04.015Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:45:04.015Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:45:04.015Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:45:09.093Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:45:09.093Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:45:09.214Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:45:09.215Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:45:09.215Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:45:09.215Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:45:10.734Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:45:10.734Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:45:10.744Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:45:10.744Z        INFO    helmer          Release manifests
+2021-10-05T11:45:10.753Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:45:10.778Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:45:10.779Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:45:10.779Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:45:10.779Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:45:10.779Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:45:10.779Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:45:10.803Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:45:10.803Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:45:10.803Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:45:20.867Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:45:25.860Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:45:30.927Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:45:36.010Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:45:41.031Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:45:45.874Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:45:45.898Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:45:45.923Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:45:45.933Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:45:47.214Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:45:47.224Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:45:49.326Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:45:49.326Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:45:49.326Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:45:49.326Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:45:49.330Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:45:49.377Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:45:49.377Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:45:49.448Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:45:49.448Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:45:49.455Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:45:49.457Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:45:49.457Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:45:49.525Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:45:51.959Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:45:51.959Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:45:51.959Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:45:53.960Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:45:53.988Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:45:53.988Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:45:53.997Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:45:54.005Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:45:54.005Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:45:54.005Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:45:59.071Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:45:59.071Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:45:59.120Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:45:59.121Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:45:59.121Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:45:59.121Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:46:00.973Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:46:00.973Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:46:01.051Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:46:01.051Z        INFO    helmer          Release manifests
+2021-10-05T11:46:01.115Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:46:01.258Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:46:01.258Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:46:01.258Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:46:01.258Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:46:01.258Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:46:01.258Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:46:01.291Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:46:01.291Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:46:01.291Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:46:11.740Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:46:16.638Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:46:21.646Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:46:26.637Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:46:31.725Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:46:36.668Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:46:36.741Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:46:36.790Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:46:36.870Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:46:39.432Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:46:39.544Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:46:42.566Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:46:42.566Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:46:42.566Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:46:42.566Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:46:42.586Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:46:42.630Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:46:42.630Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:46:42.718Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:46:42.718Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:46:42.720Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:46:42.721Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:46:42.721Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:46:42.782Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:46:45.248Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:46:45.248Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:46:45.248Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:46:47.248Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:46:47.268Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:46:47.268Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:46:47.303Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:46:47.303Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:46:47.304Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:46:47.304Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:46:47.304Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:46:47.304Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:46:47.304Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:46:47.304Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:46:47.304Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:46:47.304Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:46:47.304Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:46:47.304Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:46:47.304Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:46:47.315Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:46:47.316Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:46:47.316Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:46:52.320Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:46:52.320Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:46:52.333Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:46:52.333Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:46:52.333Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:46:52.333Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:46:53.403Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:46:53.403Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:46:53.409Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:46:53.409Z        INFO    helmer          Release manifests
+2021-10-05T11:46:53.415Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:46:53.456Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:46:53.457Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:46:53.457Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:46:53.457Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:46:53.457Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:46:53.457Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:46:53.471Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:46:53.471Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:46:53.471Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:47:03.844Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:47:08.678Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:47:13.583Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:47:18.609Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:47:23.589Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:47:28.595Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:47:28.629Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:47:28.772Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:47:28.833Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:47:33.954Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:47:34.158Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:47:36.848Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:47:36.848Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:47:36.848Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:47:36.848Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:47:36.859Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:47:36.965Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:47:36.965Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:47:37.046Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:47:37.046Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:47:37.047Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:47:37.048Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:47:37.048Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:47:37.237Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:47:39.771Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:47:39.771Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:47:39.771Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:47:41.772Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:47:41.800Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:47:41.800Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:47:41.866Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:47:41.887Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:47:41.887Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:47:41.887Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:47:46.899Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:47:46.899Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:47:46.908Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:47:46.908Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:47:46.908Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:47:46.908Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:47:47.962Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:47:47.962Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:47:47.976Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:47:47.976Z        INFO    helmer          Release manifests
+2021-10-05T11:47:47.997Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:47:48.051Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:47:48.051Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:47:48.051Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:47:48.051Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:47:48.051Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:47:48.051Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:47:48.070Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:47:48.070Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:47:48.070Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:47:58.208Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:48:03.270Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:48:08.140Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:48:13.190Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:48:18.132Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:48:23.130Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:48:23.135Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:48:23.158Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:48:23.168Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:48:33.409Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:48:33.547Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:48:36.998Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:48:36.998Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:48:36.998Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:48:36.998Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:48:37.010Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:48:37.165Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:48:37.165Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:48:37.319Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:48:37.319Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:48:37.320Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:48:37.321Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:48:37.321Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:48:37.587Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:48:40.371Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:48:40.371Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:48:40.371Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:48:42.372Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:48:42.395Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:48:42.395Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:48:42.416Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:48:42.416Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:48:42.416Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:48:42.416Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:48:42.416Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:48:42.416Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:48:42.416Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:48:42.416Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:48:42.417Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:48:42.417Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:48:42.417Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:48:42.417Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:48:42.417Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:48:42.427Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:48:42.427Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:48:42.427Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:48:47.433Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:48:47.433Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:48:47.445Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:48:47.445Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:48:47.445Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:48:47.445Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:48:48.504Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:48:48.504Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:48:48.520Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:48:48.520Z        INFO    helmer          Release manifests
+2021-10-05T11:48:48.526Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:48:48.629Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:48:48.629Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:48:48.629Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:48:48.629Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:48:48.629Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:48:48.629Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:48:48.683Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:48:48.683Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:48:48.683Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:48:58.828Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:49:03.970Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:49:08.750Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:49:13.748Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:49:18.786Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:49:23.754Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:49:23.779Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:49:23.797Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:49:23.809Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:49:44.290Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:49:44.338Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:49:46.626Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:49:46.626Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:49:46.626Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:49:46.626Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:49:46.630Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:49:46.634Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:49:46.634Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:49:46.651Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:49:46.651Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:49:46.652Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:49:46.654Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:49:46.654Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:49:46.679Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:49:48.879Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:49:48.879Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:49:48.879Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:49:50.880Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:49:50.906Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:49:50.906Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:49:50.927Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:49:50.932Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:49:50.932Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:49:50.932Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:49:55.964Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:49:55.964Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:49:55.973Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:49:55.973Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:49:55.973Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:49:55.973Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:49:57.307Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:49:57.307Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:49:57.361Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:49:57.361Z        INFO    helmer          Release manifests
+2021-10-05T11:49:57.380Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:49:57.453Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:49:57.453Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:49:57.453Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:49:57.453Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:49:57.453Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:49:57.453Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:49:57.484Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:49:57.484Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:49:57.484Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:50:07.613Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:50:12.614Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:50:17.594Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:50:22.608Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:50:27.727Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:50:32.877Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:50:33.051Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:50:33.173Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:50:33.272Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:51:14.232Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:51:14.243Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:51:16.406Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:51:16.406Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:51:16.406Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:51:16.406Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:51:16.409Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:51:16.416Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:51:16.416Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:51:16.426Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:51:16.426Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:51:16.427Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:51:16.428Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:51:16.428Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:51:16.450Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:51:18.528Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:51:18.528Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:51:18.528Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:51:20.529Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:51:20.565Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:51:20.565Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:51:20.589Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:51:20.597Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:51:20.597Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:51:20.597Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:51:25.619Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:51:25.619Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:51:25.655Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:51:25.655Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:51:25.655Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:51:25.655Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:51:26.660Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:51:26.660Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:51:26.679Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:51:26.679Z        INFO    helmer          Release manifests
+2021-10-05T11:51:26.688Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:51:26.723Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:51:26.724Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:51:26.724Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:51:26.724Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:51:26.724Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:51:26.724Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:51:26.732Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:51:26.733Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:51:26.733Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:51:37.489Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:51:42.288Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:51:47.259Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:51:52.264Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:51:57.251Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:52:02.261Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:52:02.266Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:52:02.283Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:52:02.292Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:53:24.213Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:53:24.219Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:53:27.428Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:53:27.429Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:53:27.429Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:53:27.429Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:53:27.432Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:53:27.463Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:53:27.463Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:53:27.475Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:53:27.476Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:53:27.477Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:53:27.478Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:53:27.478Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:53:27.503Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:53:29.824Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:53:29.824Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:53:29.824Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:53:31.827Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:53:31.965Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:53:31.965Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:53:32.154Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:53:32.154Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:53:32.154Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:53:32.154Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:53:32.154Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:53:32.154Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:53:32.154Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:53:32.155Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:53:32.155Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:53:32.155Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:53:32.155Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:53:32.155Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:53:32.155Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:53:32.273Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:53:32.273Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:53:32.273Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:53:37.281Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:53:37.281Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:53:37.287Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:53:37.287Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:53:37.287Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:53:37.287Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:53:38.619Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:53:38.619Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:53:38.647Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:53:38.647Z        INFO    helmer          Release manifests
+2021-10-05T11:53:38.666Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:53:38.767Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:53:38.768Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:53:38.768Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:53:38.768Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:53:38.768Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:53:38.768Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:53:38.839Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:53:38.840Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:53:38.840Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:53:48.971Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:53:53.948Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:53:59.022Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:54:04.203Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:54:09.062Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:54:13.954Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:54:13.967Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:54:13.989Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:54:13.998Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T11:56:57.840Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T11:56:58.035Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:57:01.436Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:57:01.436Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:57:01.436Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:57:01.436Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T11:57:01.443Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T11:57:01.508Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T11:57:01.508Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T11:57:01.563Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T11:57:01.563Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T11:57:01.564Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T11:57:01.565Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T11:57:01.565Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T11:57:01.729Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T11:57:04.799Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:57:04.799Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T11:57:04.800Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T11:57:06.800Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T11:57:06.821Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T11:57:06.821Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T11:57:06.891Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T11:57:06.956Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T11:57:06.956Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:57:06.956Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T11:57:11.964Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T11:57:11.964Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T11:57:11.974Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T11:57:11.974Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T11:57:11.974Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T11:57:11.974Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T11:57:13.133Z        INFO    warning         OnError: release: already exists
+2021-10-05T11:57:13.134Z        INFO    helmer          Release pre-install hooks
+2021-10-05T11:57:13.170Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T11:57:13.170Z        INFO    helmer          Release manifests
+2021-10-05T11:57:13.188Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:57:13.320Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T11:57:13.320Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T11:57:13.320Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T11:57:13.320Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T11:57:13.320Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T11:57:13.320Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T11:57:13.354Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T11:57:13.354Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T11:57:13.354Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T11:57:23.424Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:57:28.448Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:57:33.539Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:57:38.555Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:57:43.425Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:57:48.444Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:57:48.460Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T11:57:48.469Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T11:57:48.488Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
+2021-10-05T12:03:16.169Z        INFO    preamble        Controller Request      {"Name": "simple-kmod", "Namespace": ""}
+2021-10-05T12:03:16.205Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T12:03:26.391Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T12:03:26.391Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T12:03:26.391Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T12:03:26.391Z        INFO    upgrade         TODO: preflight checks
+2021-10-05T12:03:26.396Z        INFO    status          Reconciling ClusterOperator
+2021-10-05T12:03:26.403Z        INFO    status          Adding to relatedObjects        {"namespace": "simple-kmod"}
+2021-10-05T12:03:26.403Z        INFO    status          Adding to relatedObjects        {"namespace": "preamble"}
+2021-10-05T12:03:26.432Z        INFO    reconcile: UPDATE       Reconciling SpecialResource(s) in all Namespaces
+2021-10-05T12:03:26.432Z        INFO    simple-kmod     Resolving Dependencies
+2021-10-05T12:03:26.433Z        INFO    helmer          Locating        {"chart": "example/simple-kmod"}
+2021-10-05T12:03:26.434Z        INFO    simple-kmod     Reconciling Parent
+2021-10-05T12:03:26.434Z        INFO    simple-kmod     Reconciling Chart
+2021-10-05T12:03:26.495Z        INFO    upgrade         History {"entry": "quay.io/openshift-release-dev/ocp-release@sha256:53576e4df71a5f00f77718f25aec6ac7946eaaab998d99d3e3f03fcb403364db"}
+2021-10-05T12:03:28.423Z        INFO    registry        DTK     {"kernel-version": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T12:03:28.423Z        INFO    registry        DTK     {"rt-kernel-version": "4.18.0-305.12.1.rt7.84.el8_4.x86_64"}
+2021-10-05T12:03:28.423Z        INFO    registry        DTK     {"rhel-version": "8.4"}
+2021-10-05T12:03:30.438Z        INFO    simple-kmod     Getting SecretList in Namespace: simple-kmod
+2021-10-05T12:03:30.572Z        INFO    simple-kmod     Searching for builder-dockercfg Secret
+2021-10-05T12:03:30.572Z        INFO    simple-kmod     Found   {"Secret": "builder-dockercfg-fb2bq"}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajor": "rhel8.4"}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemMajorMinor": "rhel8"}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"OperatingSystemDecimal": "8.4"}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"KernelFullVersion": "4.18.0-305.12.1.el8_4.x86_64"}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"KernelPatchVersion": "4.18.0-305"}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"DriverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"Platform": "OCP"}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"ClusterVersion": "4.8.10"}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"ClusterVersionMajorMinor": "4.8"}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"ClusterUpgradeInfo": {"4.18.0-305.12.1.el8_4.x86_64":{"OSVersion":"8.4","clusterVersion":"4.8","driverToolkit":{"imageURL":"quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c","kernelFullVersion":"4.18.0-305.12.1.el8_4.x86_64","RTKernelFullVersion":"4.18.0-305.12.1.rt7.84.el8_4.x86_64","OSVersion":"8.4"}}}}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"PushSecretName": "builder-dockercfg-fb2bq"}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"OSImageURL": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:af67a35d62a89e7018b57b98a7f0bc86619dd0955c2d618fc371b60aaf1a1349"}
+2021-10-05T12:03:30.772Z        INFO    simple-kmod     Runtime Information     {"Proxy": {"HttpProxy":"","HttpsProxy":"","NoProxy":"","TrustedCA":""}}
+2021-10-05T12:03:30.849Z        INFO    resource        Found, not updating, hash the same: Namespace/simple-kmod       {"Kind": "Namespace: simple-kmod"}
+2021-10-05T12:03:30.849Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T12:03:30.849Z        INFO    wait    ForResource     {"Kind": "Namespace"}
+2021-10-05T12:03:36.011Z        INFO    simple-kmod     dep     {"ImagePuller": false}
+2021-10-05T12:03:36.011Z        INFO    simple-kmod     Looking for ImagePuller RoleBinding
+2021-10-05T12:03:36.099Z        INFO    simple-kmod     ImageReference RoleBinding found, updating
+2021-10-05T12:03:36.099Z        INFO    simple-kmod     ImageReference ServiceAccount found, returning
+2021-10-05T12:03:36.099Z        INFO    simple-kmod     Executing       {"State": "templates/0000-buildconfig.yaml"}
+2021-10-05T12:03:36.099Z        INFO    simple-kmod     KernelAffine: ClusterUpgradeInfo        {"kernel": "4.18.0-305.12.1.el8_4.x86_64", "os": "8.4", "cluster": "4.8", "driverToolkitImage": "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:15c5a46b43b973b6ca29226cff68c0cee40d151d6b887432e708248deeed895c"}
+2021-10-05T12:03:37.331Z        INFO    warning         OnError: release: already exists
+2021-10-05T12:03:37.331Z        INFO    helmer          Release pre-install hooks
+2021-10-05T12:03:37.363Z        INFO    helmer          Hooks   {"pre-install": "Ready (Get)"}
+2021-10-05T12:03:37.363Z        INFO    helmer          Release manifests
+2021-10-05T12:03:37.376Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T12:03:37.479Z        INFO    resource        Found, not updating, hash the same: ImageStream/simple-kmod-driver-container    {"Kind": "ImageStream: simple-kmod/simple-kmod-driver-container"}
+2021-10-05T12:03:37.479Z        INFO    resource        Namespace empty settting        {"namespace": "simple-kmod"}
+2021-10-05T12:03:37.479Z        INFO    filter          TODO: how to set label ownership for Builds and related Pods
+2021-10-05T12:03:37.479Z        INFO    kernel          Object is Kernel Affine {"Object": "simple-kmod-driver-build"}
+2021-10-05T12:03:37.479Z        INFO    resource        driver-container-vendor {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod"}
+2021-10-05T12:03:37.479Z        INFO    resource        vendor == updateVendor  {"Kind": "BuildConfig", "Namespace": "simple-kmod", "Name": "simple-kmod-driver-build-876ff3522a455de7", "vendor": "simple-kmod", "updateVendor": "simple-kmod"}
+2021-10-05T12:03:37.521Z        INFO    resource        Found, not updating, hash the same: BuildConfig/simple-kmod-driver-build-876ff3522a455de7       {"Kind": "BuildConfig: simple-kmod/simple-kmod-driver-build-876ff3522a455de7"}
+2021-10-05T12:03:37.521Z        INFO    resource        specialresource.openshift.io/wait
+2021-10-05T12:03:37.521Z        INFO    wait    ForResource     {"Kind": "BuildConfig"}
+2021-10-05T12:03:47.630Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T12:03:52.636Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T12:03:57.611Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T12:04:03.017Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T12:04:07.823Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T12:04:12.639Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T12:04:12.685Z        INFO    wait    Waiting for availability of     {"Kind": "Build: simple-kmod/simple-kmod-driver-build-876ff3522a455de7-1"}
+2021-10-05T12:04:12.715Z        INFO    warning         OnError: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition
+2021-10-05T12:04:12.731Z        INFO    simple-kmod     RECONCILE REQUEUE: Could not reconcile chart    {"error": "Cannot reconcile hardware states: Failed to create state: templates/0000-buildconfig.yaml: After CRUD hooks failed: Could not wait for resource: Waiting too long for resource: timed out waiting for the condition"}
