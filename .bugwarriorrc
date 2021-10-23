@@ -59,6 +59,7 @@ description_length = 150
 # exit early.
 [hooks]
 #pre_import = /home/someuser/backup.sh, /home/someuser/sometask.sh
+pre_import = /Users/ybettan/inSync/dual_screen/GitHubTmp/test.sh
 
 # This section is for configuring notifications when bugwarrior-pull runs,
 # and when issues are created, updated, or deleted by bugwarrior-pull.
@@ -91,7 +92,7 @@ github.username = ybettan
 # the username you ask bugwarrior to login as
 github.login = ybettan
 #FIXME: remove ? This is supposed to be read only to public repos
-github.token = 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
+github.token = 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
 
 #github.exclude_repos = project_bar,project_baz
 #github.include_repos = assisted-service
