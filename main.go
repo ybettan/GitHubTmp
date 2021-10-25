@@ -105,11 +105,6 @@ func main() {
 	//	},
 	//}
 
-	//var tangInfo string
-	//for _, ti := range de.TangInfo {
-	//	tangInfo += fmt.Sprintf("\n%s- url: %s\n%sthumbprint: %s", strings.Repeat(" ", 14), ti.url, strings.Repeat(" ", 16), ti.thumbprint)
-	//}
-
 	p := map[string]interface{}{
 		"ROLE": "master",
 		"MODE": "tang",
