@@ -2,7 +2,6 @@ package main
 
 import (
 	"bytes"
-	"fmt"
 	"text/template"
 )
 
@@ -135,5 +134,4 @@ func main() {
 		panic(err.Error())
 	}
 
-	fmt.Println(buf)
 }
