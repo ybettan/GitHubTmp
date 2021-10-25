@@ -88,7 +88,6 @@ type TangServer struct {
 
 func main() {
 
-	//de := DiskEncryption{
 	//	TangInfo: []*TangInfo{
 	//		{
 	//			url:        "http://tang.example.com:7500",
