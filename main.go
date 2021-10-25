@@ -88,7 +88,6 @@ type TangServer struct {
 
 func main() {
 
-	//	TangInfo: []*TangInfo{
 	//		{
 	//			url:        "http://tang.example.com:7500",
 	//			thumbprint: "PLjNyRdGw03zlRoGjQYMahSZGu9",
