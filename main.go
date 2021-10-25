@@ -79,13 +79,6 @@ type TangServer struct {
 	Thumbprint string
 }
 
-//
-//type DiskEncryption struct {
-//	EnableOn    string
-//	Mode        string
-//	TangServers string
-//}
-
 func main() {
 
 	//de := DiskEncryption{
