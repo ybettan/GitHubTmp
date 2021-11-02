@@ -8,7 +8,6 @@ tests/deploy.sh
 # configure access from bkr host to the cluster
 
 # update svc/thanos-receive and svc/thanos-querier types to NodePort
-kubectl edit svc/thanos-receive -n observatorium
 kubectl edit svc/thanos-querier -n observatorium
 
 # test connection from host outside the cluster (bkr)
