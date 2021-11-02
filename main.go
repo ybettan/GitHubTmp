@@ -81,7 +81,6 @@ type TangServer struct {
 
 //
 //type DiskEncryption struct {
-//	Mode        string
 //	TangServers string
 //}
 
