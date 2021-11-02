@@ -80,7 +80,6 @@ type TangServer struct {
 }
 
 //
-//type DiskEncryption struct {
 //}
 
 func main() {
