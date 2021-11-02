@@ -82,7 +82,6 @@ type TangServer struct {
 //
 //type DiskEncryption struct {
 //	EnableOn    string
-//	TangServers string
 //}
 
 func main() {
