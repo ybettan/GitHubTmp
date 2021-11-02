@@ -7,7 +7,6 @@
 int p_strcmp(char *str1, char *str2) {
 
     int numProc, rank;
-    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &numProc);
 
     int chunkSize = strlen(str1) / numProc;
